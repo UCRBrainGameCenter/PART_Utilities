@@ -1,0 +1,235 @@
+{
+	"Version": 2,
+	"Name": "STM Sensitivity (Right)",
+	"Task": "SpectroTemporal Envelope Sensitivity",
+	"Algorithm": "Layered Linear Staircase",
+	"TaskType": "QAAQTask",
+	"TaskParameters": [
+		{
+			"Name": "ITI",
+			"Type": "Float",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "TENoise",
+			"Type": "Bool",
+			"ValueString": "False",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "TENoiseLevel",
+			"Type": "Float",
+			"ValueString": "40",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "DisplayParameter",
+			"Type": "Bool",
+			"ValueString": "False",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "MinSI",
+			"Type": "Float",
+			"ValueString": "0.5",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "ISI",
+			"Type": "Float",
+			"ValueString": "0.25",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "StimLevel",
+			"Type": "Float",
+			"ValueString": "50",
+			"KeyMode": true,
+			"Key": "rightSTMPresentationLevel"
+		},
+		{
+			"Name": "RovingRange",
+			"Type": "Float",
+			"ValueString": "3",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Adapt",
+			"Type": "StringList",
+			"ValueString": "Envelope Level (dB)",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Presentation",
+			"Type": "StringList",
+			"ValueString": "Monaural Right",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "RippleDirection",
+			"Type": "StringList",
+			"ValueString": "Random",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Duration",
+			"Type": "Float",
+			"ValueString": "0.5",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "ModDepth",
+			"Type": "Float",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "CycleRate",
+			"Type": "Float",
+			"ValueString": "4",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "CycleDensity",
+			"Type": "Float",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FreqRangeLB",
+			"Type": "Float",
+			"ValueString": "400",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FreqRangeUB",
+			"Type": "Float",
+			"ValueString": "8000",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Tones",
+			"Type": "Int",
+			"ValueString": "10000",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "AmpDist",
+			"Type": "StringList",
+			"ValueString": "Rayleigh",
+			"KeyMode": false,
+			"Key": ""
+		}
+	],
+	"AlgorithmParameters": [
+		{
+			"Name": "CorrectDown",
+			"Type": "Int",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "WrongUp",
+			"Type": "Int",
+			"ValueString": "1",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Reversals1",
+			"Type": "Int",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Reversals2",
+			"Type": "Int",
+			"ValueString": "6",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "AdaptUp",
+			"Type": "Bool",
+			"ValueString": "False",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "BaseStepSize",
+			"Type": "Float",
+			"ValueString": "0.1",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "InitialStepsUp",
+			"Type": "Int",
+			"ValueString": "10",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "InitialStepsDown",
+			"Type": "Int",
+			"ValueString": "5",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FinalStepsUp",
+			"Type": "Int",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FinalStepsDown",
+			"Type": "Int",
+			"ValueString": "1",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "AdaptMin",
+			"Type": "Float",
+			"ValueString": "0.2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "AdaptMax",
+			"Type": "Float",
+			"ValueString": "40",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "ThreshOut",
+			"Type": "Output_Val",
+			"ValueString": "rightSTMModDepthThreshold",
+			"KeyMode": true,
+			"Key": "rightSTMModDepthThreshold"
+		}
+	]
+}

@@ -1,0 +1,109 @@
+{
+	"Version": 2,
+	"Name": "STM With Threshold Detection",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Initial Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "First, let's begin by measuring the volume at which you can barely detect the test's sound, starting with your left ear.\n\nYou will see four targets light up on the screen.  A sound will play while one of the middle two targets are lit up.  After all four targets have lit up, tap on the target that coincided with the sound you heard."
+				}
+			]
+		},
+		{
+			"Name": "STM Detection Threshold (Left)",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Right Ear Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Now we will repeat the same process for your right ear."
+				}
+			]
+		},
+		{
+			"Name": "STM Detection Threshold (Right)",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Modifier",
+			"Name": "Generate Presentation Levels",
+			"Modifiers": [
+				{
+					"Type": "KeyValue",
+					"InputKey": "leftSTMThreshold",
+					"Value": 30,
+					"Operation": "Plus",
+					"OutputKey": "leftSTMPresentationLevel"
+				},
+				{
+					"Type": "KeyValue",
+					"InputKey": "rightSTMThreshold",
+					"Value": 30,
+					"Operation": "Plus",
+					"OutputKey": "rightSTMPresentationLevel"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Well done.\n\nNow that we know what a comfortable volume should be for you, we are going to measure your ability to detect small but specific changes among a group of sounds.\n\nJust like before, there will be four targets, but this time, each target will have a sound.  One of the middle two targets will sound just a bit different.  Your task is to identify which middle target played a sound that differed from all of the others.  Let's start with your left ear."
+				}
+			]
+		},
+		{
+			"Name": "STM Sensitivity (Left)",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Instructions Right",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Well done, you're almost finished.\n\nWe will now repeat the last test for your Right ear."
+				}
+			]
+		},
+		{
+			"Name": "STM Sensitivity (Right)",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results.",
+			"Reports": [
+				{
+					"Label": "Left STM Detection Threshold",
+					"Type": 1,
+					"Key": "leftSTMThreshold"
+				},
+				{
+					"Label": "Right STM Detection Threshold",
+					"Type": 1,
+					"Key": "rightSTMThreshold"
+				},
+				{
+					"Label": "Left STM Modulation Depth Threshold",
+					"Type": 1,
+					"Key": "leftSTMModDepthThreshold"
+				},
+				{
+					"Label": "Right STM Modulation Depth Threshold",
+					"Type": 1,
+					"Key": "rightSTMModDepthThreshold"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,181 @@
+{
+	"Version": 2,
+	"Name": "Listen Battery v2",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Task Structure Explanation",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Welcome to the PART task battery.\n\nAll of the tasks have the same, simple objective: Compare two sounds and identify which one is \"special\".\n\nIn every task, four squares will emit a sound, one at a time.  Three of the sounds will be \"ordinary\" and one will be \"special\".  The \"special\" sound that you need to identify will always be one of the two in the middle.  The first sound and the last sound will be examples of the \"ordinary\" sound.\n\nIn the following quick example, the \"ordinary\" sound just is silence and the \"special\" sound is not.  After listening to all four sounds, tap on the square the \"special\" sound came from."
+				}
+			]
+		},
+		{
+			"Name": "Task Structure Example",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Frequency Modulation Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "In this task, each sound will be slightly different in pitch, but one will have a wobble, both in pitch and in where it sounds like it is located inside your head. The wobbling sound will be one of the center two boxes.\n\nCan you identify the wobbling sound? \n\nThe program will try to find the smallest wobble that you can hear. That means that sometimes it will appear that none of the sounds were wobbly. In that case the difference was too small for you to notice it, so just press either of the middle two boxes. When the program finds that smallest wobble you can notice, it will proceed to the next phase."
+				}
+			]
+		},
+		{
+			"Name": "Binaural FM Fixed Level",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Modifier",
+			"Name": "Prepare FM Mod",
+			"Modifiers": [
+				{
+					"Type": "KeyValue",
+					"InputKey": "BFMThreshold",
+					"Value": 2,
+					"Operation": "Times",
+					"OutputKey": "InitialFMMod"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Frequency Modulation Instructions 2",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Great Job!\n\nNow we'll do one more pass of this task, starting near your limits."
+				}
+			]
+		},
+		{
+			"Name": "Binaural FM Fixed Level Pass2",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Gap Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Next you will hear several sets of rapid clicks.  One set of clicks will be slower than the others.  Can you identify the slow set?"
+				}
+			]
+		},
+		{
+			"Name": "Temporal Gap Examples",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Gap Instructions 2",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Good job.  Now we'll do a harder version.  Continue to identify the set of clicks with the larger gap.\n\nThis task will try to find the smallest gap you can hear, so if you're not sure, just guess.  When the program finds the smallest gap you can hear, it will automatically move on to the final part."
+				}
+			]
+		},
+		{
+			"Name": "Temporal gap 4ms Diotic Fixed Level",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Modifier",
+			"Name": "Prepare Gap Mod",
+			"Modifiers": [
+				{
+					"Type": "KeyValue",
+					"InputKey": "GapThresholdDiotic",
+					"Value": 2,
+					"Operation": "Times",
+					"OutputKey": "InitialGap"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Gap Instructions 3",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Excellent job!\n\nNow we'll do one more run of the Gap task, starting near your limits."
+				}
+			]
+		},
+		{
+			"Name": "Temporal gap 4ms Diotic Fixed Level Pass2",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "In the last task, you will be listening for a small amount of warping among noise.  As before, this warping will only be present in one of the center two sounds.\n\nCan you identify the sound with the warping?\n\nHere is a simple example."
+				}
+			]
+		},
+		{
+			"Name": "STM Example",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Instructions 2",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Now you will do the complete task.  Like before, your goal is to identify the noise with the warping.\n\nThis test will try to find the smallest warping you can hear, so if you are unsure which choice had the warping, just submit a guess.  When the program finds the smallest warping you can hear, the test will repeat once more, and then it will end."
+				}
+			]
+		},
+		{
+			"Name": "Spectrotemporal Modulation Detection Diotic Fixed Level",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Modifier",
+			"Name": "Prepare STM Mod",
+			"Modifiers": [
+				{
+					"Type": "KeyValue",
+					"InputKey": "STMThresholdDiotic",
+					"Value": 1,
+					"Operation": "Plus",
+					"OutputKey": "InitialSTMMod"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Instructions 3",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Excellent job.\n\nOne more pass with this task, and you'll be done with the PART batteries."
+				}
+			]
+		},
+		{
+			"Name": "STM Detection Diotic Fixed Level Pass2",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Completed",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Congratulations!\n\nYou are finished with the PART battery."
+				}
+			]
+		}
+	]
+}

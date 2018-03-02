@@ -1,0 +1,123 @@
+{
+	"Version": 2,
+	"Name": "Temporal Gap Examples",
+	"Task": "Temporal Envelope Gap Discrimination",
+	"Algorithm": "Fixed Trial Presentation",
+	"TaskType": "QAAQTask",
+	"TaskParameters": [
+		{
+			"Name": "ITI",
+			"Type": "Float",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "TENoise",
+			"Type": "Bool",
+			"ValueString": "False",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "TENoiseLevel",
+			"Type": "Float",
+			"ValueString": "40",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "DisplayParameter",
+			"Type": "Bool",
+			"ValueString": "False",
+			"KeyMode": false,
+			"Key": "DisplayValues"
+		},
+		{
+			"Name": "MinSI",
+			"Type": "Float",
+			"ValueString": "0.5",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "ISI",
+			"Type": "Float",
+			"ValueString": "0.25",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "StimLevel",
+			"Type": "Float",
+			"ValueString": "80",
+			"KeyMode": false,
+			"Key": "SensationLevelLeft"
+		},
+		{
+			"Name": "Adapt",
+			"Type": "StringList",
+			"ValueString": "Gap Size",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Presentation",
+			"Type": "StringList",
+			"ValueString": "Diotic",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Duration",
+			"Type": "Float",
+			"ValueString": "0.25",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Width",
+			"Type": "Float",
+			"ValueString": "0.004",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "GapDuration",
+			"Type": "Float",
+			"ValueString": "0.1",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FreqRangeLB",
+			"Type": "Float",
+			"ValueString": "500",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FreqRangeUB",
+			"Type": "Float",
+			"ValueString": "500",
+			"KeyMode": false,
+			"Key": ""
+		}
+	],
+	"AlgorithmParameters": [
+		{
+			"Name": "Trials",
+			"Type": "Int",
+			"ValueString": "3",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "AccOut",
+			"Type": "Output_Val",
+			"ValueString": "",
+			"KeyMode": true,
+			"Key": ""
+		}
+	]
+}

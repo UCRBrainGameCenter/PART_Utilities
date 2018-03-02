@@ -1,0 +1,158 @@
+{
+	"Version": 2,
+	"Name": "Task Structure Example",
+	"Task": "SpectroTemporal Envelope Sensitivity",
+	"Algorithm": "Fixed Trial Presentation",
+	"TaskType": "QAAQTask",
+	"TaskParameters": [
+		{
+			"Name": "ITI",
+			"Type": "Float",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "TENoise",
+			"Type": "Bool",
+			"ValueString": "False",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "TENoiseLevel",
+			"Type": "Float",
+			"ValueString": "40",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "DisplayParameter",
+			"Type": "Bool",
+			"ValueString": "False",
+			"KeyMode": false,
+			"Key": "displayParameters"
+		},
+		{
+			"Name": "MinSI",
+			"Type": "Float",
+			"ValueString": "0.5",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "ISI",
+			"Type": "Float",
+			"ValueString": "0.25",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "StimLevel",
+			"Type": "Float",
+			"ValueString": "70",
+			"KeyMode": false,
+			"Key": "leftSTMPresentationLevel"
+		},
+		{
+			"Name": "RovingRange",
+			"Type": "Float",
+			"ValueString": "3",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Adapt",
+			"Type": "StringList",
+			"ValueString": "Stimulus Level (Detection in Quiet)",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Presentation",
+			"Type": "StringList",
+			"ValueString": "Diotic",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "RippleDirection",
+			"Type": "StringList",
+			"ValueString": "Random",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Duration",
+			"Type": "Float",
+			"ValueString": "0.5",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "ModDepth",
+			"Type": "Float",
+			"ValueString": "20",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "CycleRate",
+			"Type": "Float",
+			"ValueString": "4",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "CycleDensity",
+			"Type": "Float",
+			"ValueString": "2",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FreqRangeLB",
+			"Type": "Float",
+			"ValueString": "400",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "FreqRangeUB",
+			"Type": "Float",
+			"ValueString": "8000",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "Tones",
+			"Type": "Int",
+			"ValueString": "10000",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "AmpDist",
+			"Type": "StringList",
+			"ValueString": "Rayleigh",
+			"KeyMode": false,
+			"Key": ""
+		}
+	],
+	"AlgorithmParameters": [
+		{
+			"Name": "Trials",
+			"Type": "Int",
+			"ValueString": "3",
+			"KeyMode": false,
+			"Key": ""
+		},
+		{
+			"Name": "AccOut",
+			"Type": "Output_Val",
+			"ValueString": "",
+			"KeyMode": true,
+			"Key": ""
+		}
+	]
+}

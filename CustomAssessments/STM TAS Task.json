@@ -1,20 +1,19 @@
 {
 	"Type": "Custom",
-	"AssessmentName": "STM Example",
+	"AssessmentName": "STM TAS Task",
 	"Stimulus": {
 		"Type": "STM",
 		"Task Configuration": {
-			"Type": "Four Interval",
+			"Type": "TAS Task",
+			"TrialsPerBlock": 10,
+			"TargetsPerBlock": 5,
+			"CorrectTrialThreshold": 8,
 			"InterstimInterval": 250,
-			"MinStimInterval": 500,
-			"Intertrial Interval": {
-				"Type": "Fixed",
-				"Value": 1000
-			}
+			"MinStimInterval": 500
 		},
 		"Testing Features": {
 			"Type": "Default",
-			"DisplayParams": false
+			"DisplayParams": true
 		},
 		"Stimulus Level": {
 			"Type": "Roving",
@@ -48,10 +47,12 @@
 			}
 		},
 		"Modulation Depth": {
-			"Type": "Fixed",
+			"Type": "Adaptive",
 			"Modulation Envelope": {
 				"Type": "Exponential",
-				"Value": 10,
+				"Initial": 10,
+				"Min": 0,
+				"Max": 40,
 				"Standard Behavior": {
 					"Type": "Fixed",
 					"StandardValue": 0
@@ -75,8 +76,8 @@
 		"Carrier Composition": {
 			"Type": "Noise",
 			"FrequencyDistribution": "Exponential",
-			"LowerBound": 400,
-			"UpperBound": 8000,
+			"LowerBound": 20,
+			"UpperBound": 16000,
 			"CarrierCount": 10000,
 			"AmplitudeDistribution": "Rayleigh",
 			"AmplitudeFactor": "White",
@@ -87,9 +88,29 @@
 		}
 	},
 	"Algorithm": {
-		"Type": "Fixed Presentation",
-		"Trials": 3,
+		"Type": "Staged Staircase",
+		"CorrectToStepDown": 1,
+		"WrongToStepUp": 1,
+		"Stages": {
+			"Type": "2Stages",
+			"Stage2Reversals": 6,
+			"Stage2StepsUp": 1,
+			"Stage2StepsDown": 1,
+			"Stage1Reversals": 3,
+			"Stage1StepsUp": 5,
+			"Stage1StepsDown": 5
+		},
 		"Templates": [
+			{
+				"Type": "Modulation Envelope",
+				"AlgorithmSlot": "StaircaseParameter",
+				"StepDownBehavior": "DecreaseParameter",
+				"Step Template": {
+					"Type": "Exponential",
+					"BaseMajorFactor": 2,
+					"StepsToMajorFactor": 10
+				}
+			}
 		]
 	},
 	"Version": 4

@@ -1,235 +1,121 @@
 {
-	"Version": 2,
-	"Name": "STM Detection Diotic Fixed Level Pass2",
-	"Task": "SpectroTemporal Envelope Sensitivity",
-	"Algorithm": "Layered Linear Staircase",
-	"TaskType": "QAAQTask",
-	"TaskParameters": [
-		{
-			"Name": "ITI",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
+	"Type": "Custom",
+	"AssessmentName": "STM Detection Diotic Fixed Level Pass2",
+	"Stimulus": {
+		"Type": "STM",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
 		},
-		{
-			"Name": "TENoise",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": ""
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
 		},
-		{
-			"Name": "TENoiseLevel",
-			"Type": "Float",
-			"ValueString": "40",
-			"KeyMode": false,
-			"Key": ""
+		"Stimulus Level": {
+			"Type": "Roving",
+			"GenerationFrequency": "Interval",
+			"Roving Behavior": {
+				"Type": "Linear Radial Rove",
+				"CentralValue": 70,
+				"RovingRadius": 3
+			}
 		},
-		{
-			"Name": "DisplayParameter",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": "displayParameters"
+		"Presentation": {
+			"Type": "Fixed Lateralization",
+			"Value": "Both"
 		},
-		{
-			"Name": "MinSI",
-			"Type": "Float",
-			"ValueString": "0.5",
-			"KeyMode": false,
-			"Key": ""
+		"Stimulus Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
 		},
-		{
-			"Name": "ISI",
-			"Type": "Float",
-			"ValueString": "0.25",
-			"KeyMode": false,
-			"Key": ""
+		"Ripple Direction": {
+			"Type": "Random",
+			"GenerationFrequency": "Interval"
 		},
-		{
-			"Name": "StimLevel",
-			"Type": "Float",
-			"ValueString": "70",
-			"KeyMode": false,
-			"Key": "leftSTMPresentationLevel"
+		"Stimulus Duration": {
+			"Type": "Fixed",
+			"Value": 500,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "RovingRange",
-			"Type": "Float",
-			"ValueString": "3",
-			"KeyMode": false,
-			"Key": ""
+		"Modulation Depth": {
+			"Type": "Adaptive",
+			"Modulation Envelope": {
+				"Type": "Exponential",
+				"Min": 0,
+				"Max": 40,
+				"Standard Behavior": {
+					"Type": "Fixed",
+					"StandardValue": 0
+				},
+				"Keys": {
+					"Initial": "InitialSTMMod"
+				}
+			}
 		},
-		{
-			"Name": "Adapt",
-			"Type": "StringList",
-			"ValueString": "Envelope Level (dB)",
-			"KeyMode": false,
-			"Key": ""
+		"Temporal Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 4,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "Presentation",
-			"Type": "StringList",
-			"ValueString": "Diotic",
-			"KeyMode": false,
-			"Key": ""
+		"Spectral Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 2,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "RippleDirection",
-			"Type": "StringList",
-			"ValueString": "Random",
-			"KeyMode": false,
-			"Key": ""
+		"Carrier Composition": {
+			"Type": "Noise",
+			"FrequencyDistribution": "Exponential",
+			"LowerBound": 400,
+			"UpperBound": 8000,
+			"CarrierCount": 10000,
+			"AmplitudeDistribution": "Rayleigh",
+			"AmplitudeFactor": "White",
+			"CarrierPhase": "Random"
 		},
-		{
-			"Name": "Duration",
-			"Type": "Float",
-			"ValueString": "0.5",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "ModDepth",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": true,
-			"Key": "InitialSTMMod"
-		},
-		{
-			"Name": "CycleRate",
-			"Type": "Float",
-			"ValueString": "4",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "CycleDensity",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FreqRangeLB",
-			"Type": "Float",
-			"ValueString": "400",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FreqRangeUB",
-			"Type": "Float",
-			"ValueString": "8000",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Tones",
-			"Type": "Int",
-			"ValueString": "10000",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AmpDist",
-			"Type": "StringList",
-			"ValueString": "Rayleigh",
-			"KeyMode": false,
-			"Key": ""
+		"Masker": {
+			"Type": "Disabled"
 		}
-	],
-	"AlgorithmParameters": [
-		{
-			"Name": "CorrectDown",
-			"Type": "Int",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
+	},
+	"Algorithm": {
+		"Type": "Staged Staircase",
+		"CorrectToStepDown": 2,
+		"WrongToStepUp": 1,
+		"Stages": {
+			"Type": "2Stages",
+			"Stage2Reversals": 6,
+			"Stage2StepsUp": 2,
+			"Stage2StepsDown": 1,
+			"Stage1Reversals": 3,
+			"Stage1StepsUp": 10,
+			"Stage1StepsDown": 5
 		},
-		{
-			"Name": "WrongUp",
-			"Type": "Int",
-			"ValueString": "1",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Reversals1",
-			"Type": "Int",
-			"ValueString": "3",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Reversals2",
-			"Type": "Int",
-			"ValueString": "6",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AdaptUp",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "BaseStepSize",
-			"Type": "Float",
-			"ValueString": "0.1",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "InitialStepsUp",
-			"Type": "Int",
-			"ValueString": "10",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "InitialStepsDown",
-			"Type": "Int",
-			"ValueString": "5",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FinalStepsUp",
-			"Type": "Int",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FinalStepsDown",
-			"Type": "Int",
-			"ValueString": "1",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AdaptMin",
-			"Type": "Float",
-			"ValueString": "0",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AdaptMax",
-			"Type": "Float",
-			"ValueString": "40",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "ThreshOut",
-			"Type": "Output_Val",
-			"ValueString": "STMThresholdDiotic2",
-			"KeyMode": true,
-			"Key": "STMThresholdDiotic2"
-		}
-	]
+		"Templates": [
+			{
+				"Type": "Modulation Envelope",
+				"AlgorithmSlot": "StaircaseParameter",
+				"StepDownBehavior": "DecreaseParameter",
+				"Threshold": "STMThresholdDiotic2",
+				"Step Template": {
+					"Type": "Exponential",
+					"BaseMajorFactor": 2,
+					"StepsToMajorFactor": 10
+				}
+			}
+		]
+	},
+	"Version": 4
 }

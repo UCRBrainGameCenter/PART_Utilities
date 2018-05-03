@@ -1,123 +1,72 @@
 {
-	"Version": 2,
-	"Name": "Temporal Gap Examples",
-	"Task": "Temporal Envelope Gap Discrimination",
-	"Algorithm": "Fixed Trial Presentation",
-	"TaskType": "QAAQTask",
-	"TaskParameters": [
-		{
-			"Name": "ITI",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
+	"Type": "Custom",
+	"AssessmentName": "Temporal Gap Examples",
+	"Stimulus": {
+		"Type": "SequentialClicks",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
 		},
-		{
-			"Name": "TENoise",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": ""
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
 		},
-		{
-			"Name": "TENoiseLevel",
-			"Type": "Float",
-			"ValueString": "40",
-			"KeyMode": false,
-			"Key": ""
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 80,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "DisplayParameter",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": "DisplayValues"
+		"PeriStimulus Buffer": {
+			"Type": "Default",
+			"Value": 50
 		},
-		{
-			"Name": "MinSI",
-			"Type": "Float",
-			"ValueString": "0.5",
-			"KeyMode": false,
-			"Key": ""
+		"Channel Options": {
+			"Type": "Fixed Channels",
+			"LeadingChannel": "Both",
+			"FollowingChannel": "Same"
 		},
-		{
-			"Name": "ISI",
-			"Type": "Float",
-			"ValueString": "0.25",
-			"KeyMode": false,
-			"Key": ""
+		"ClickDuration": {
+			"Type": "Fixed",
+			"Value": 4,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "StimLevel",
-			"Type": "Float",
-			"ValueString": "80",
-			"KeyMode": false,
-			"Key": "SensationLevelLeft"
+		"InterClick Delay": {
+			"Type": "Fixed",
+			"Value": 100,
+			"Standard Behavior": {
+				"Type": "Fixed",
+				"StandardValue": 0
+			}
 		},
-		{
-			"Name": "Adapt",
-			"Type": "StringList",
-			"ValueString": "Gap Size",
-			"KeyMode": false,
-			"Key": ""
+		"Carrier Composition": {
+			"Type": "Pure Tone (Fixed)",
+			"Value": 500
 		},
-		{
-			"Name": "Presentation",
-			"Type": "StringList",
-			"ValueString": "Diotic",
-			"KeyMode": false,
-			"Key": ""
+		"Masker": {
+			"Type": "Disabled"
 		},
-		{
-			"Name": "Duration",
-			"Type": "Float",
-			"ValueString": "0.25",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Width",
-			"Type": "Float",
-			"ValueString": "0.004",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "GapDuration",
-			"Type": "Float",
-			"ValueString": "0.1",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FreqRangeLB",
-			"Type": "Float",
-			"ValueString": "500",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FreqRangeUB",
-			"Type": "Float",
-			"ValueString": "500",
-			"KeyMode": false,
-			"Key": ""
+		"Masker Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
 		}
-	],
-	"AlgorithmParameters": [
-		{
-			"Name": "Trials",
-			"Type": "Int",
-			"ValueString": "3",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AccOut",
-			"Type": "Output_Val",
-			"ValueString": "",
-			"KeyMode": true,
-			"Key": ""
-		}
-	]
+	},
+	"Algorithm": {
+		"Type": "Fixed Presentation",
+		"Trials": 3,
+		"Templates": [
+		]
+	},
+	"Version": 4
 }

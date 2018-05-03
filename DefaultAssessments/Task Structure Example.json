@@ -1,158 +1,94 @@
 {
-	"Version": 2,
-	"Name": "Task Structure Example",
-	"Task": "SpectroTemporal Envelope Sensitivity",
-	"Algorithm": "Fixed Trial Presentation",
-	"TaskType": "QAAQTask",
-	"TaskParameters": [
-		{
-			"Name": "ITI",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
+	"Type": "Custom",
+	"AssessmentName": "Task Structure Example",
+	"Stimulus": {
+		"Type": "STM",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
 		},
-		{
-			"Name": "TENoise",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": ""
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
 		},
-		{
-			"Name": "TENoiseLevel",
-			"Type": "Float",
-			"ValueString": "40",
-			"KeyMode": false,
-			"Key": ""
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 70,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "DisplayParameter",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": "displayParameters"
+		"Presentation": {
+			"Type": "Fixed Lateralization",
+			"Value": "Both"
 		},
-		{
-			"Name": "MinSI",
-			"Type": "Float",
-			"ValueString": "0.5",
-			"KeyMode": false,
-			"Key": ""
+		"Stimulus Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
 		},
-		{
-			"Name": "ISI",
-			"Type": "Float",
-			"ValueString": "0.25",
-			"KeyMode": false,
-			"Key": ""
+		"Ripple Direction": {
+			"Type": "Random",
+			"GenerationFrequency": "Interval"
 		},
-		{
-			"Name": "StimLevel",
-			"Type": "Float",
-			"ValueString": "70",
-			"KeyMode": false,
-			"Key": "leftSTMPresentationLevel"
+		"Stimulus Duration": {
+			"Type": "Fixed",
+			"Value": 500,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "RovingRange",
-			"Type": "Float",
-			"ValueString": "3",
-			"KeyMode": false,
-			"Key": ""
+		"Modulation Depth": {
+			"Type": "Fixed",
+			"Modulation Envelope": {
+				"Type": "Exponential",
+				"Value": 20,
+				"Standard Behavior": {
+					"Type": "Fixed",
+					"StandardValue": 0
+				}
+			}
 		},
-		{
-			"Name": "Adapt",
-			"Type": "StringList",
-			"ValueString": "Stimulus Level (Detection in Quiet)",
-			"KeyMode": false,
-			"Key": ""
+		"Temporal Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 4,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "Presentation",
-			"Type": "StringList",
-			"ValueString": "Diotic",
-			"KeyMode": false,
-			"Key": ""
+		"Spectral Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 2,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "RippleDirection",
-			"Type": "StringList",
-			"ValueString": "Random",
-			"KeyMode": false,
-			"Key": ""
+		"Carrier Composition": {
+			"Type": "Noise",
+			"FrequencyDistribution": "Exponential",
+			"LowerBound": 400,
+			"UpperBound": 8000,
+			"CarrierCount": 10000,
+			"AmplitudeDistribution": "Rayleigh",
+			"AmplitudeFactor": "White",
+			"CarrierPhase": "Random"
 		},
-		{
-			"Name": "Duration",
-			"Type": "Float",
-			"ValueString": "0.5",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "ModDepth",
-			"Type": "Float",
-			"ValueString": "20",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "CycleRate",
-			"Type": "Float",
-			"ValueString": "4",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "CycleDensity",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FreqRangeLB",
-			"Type": "Float",
-			"ValueString": "400",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FreqRangeUB",
-			"Type": "Float",
-			"ValueString": "8000",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Tones",
-			"Type": "Int",
-			"ValueString": "10000",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AmpDist",
-			"Type": "StringList",
-			"ValueString": "Rayleigh",
-			"KeyMode": false,
-			"Key": ""
+		"Masker": {
+			"Type": "Disabled"
 		}
-	],
-	"AlgorithmParameters": [
-		{
-			"Name": "Trials",
-			"Type": "Int",
-			"ValueString": "3",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AccOut",
-			"Type": "Output_Val",
-			"ValueString": "",
-			"KeyMode": true,
-			"Key": ""
-		}
-	]
+	},
+	"Algorithm": {
+		"Type": "Fixed Presentation",
+		"Trials": 3,
+		"Templates": [
+		]
+	},
+	"Version": 4
 }

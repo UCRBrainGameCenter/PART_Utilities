@@ -1,0 +1,139 @@
+{
+	"Type": "Custom",
+	"AssessmentName": "MultiBurstDifferent",
+	"Stimulus": {
+		"Type": "MultiBurst",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
+		},
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
+		},
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 75,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"PeriStimulus Buffer": {
+			"Type": "Default",
+			"Value": 50
+		},
+		"Presentation": {
+			"Type": "Fixed Lateralization",
+			"Value": "Both"
+		},
+		"Chord Count": {
+			"Type": "Fixed",
+			"Value": 8,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"InterChord Interval": {
+			"Type": "Fixed",
+			"Value": 0
+		},
+		"Chord Duration": {
+			"Type": "Fixed",
+			"Value": 60,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Chord Window": {
+			"Type": "Default",
+			"WindowingFunction": "Hamming",
+			"WindowSkirt": 10
+		},
+		"Chord Tone Count": {
+			"Type": "Fixed",
+			"Value": 3,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Tone Composition": {
+			"Type": "Default",
+			"ToneDistribution": "Exponential",
+			"DiscreteToneCount": 200,
+			"LowerBound": 180,
+			"UpperBound": 8000
+		},
+		"Target\/Masker Tone Level Ratio": {
+			"Type": "Adaptive",
+			"Initial": 0,
+			"Min": -100,
+			"Max": 100
+		},
+		"Target Composition": {
+			"Type": "Target Frequency",
+			"Value Behavior": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
+		},
+		"Target Tone Coherence": {
+			"Type": "Fixed",
+			"Value": 8
+		},
+		"Target Protective Decoherence": {
+			"Type": "Fixed",
+			"DecoherencePattern": "Rectangular",
+			"TemporalDecoherence": 0,
+			"SpectralDecoherence": 40
+		},
+		"Masking Tone Properties": {
+			"Type": "Default",
+			"IntervalMirroring": "TargetExclusion"
+		},
+		"Masking Tone Coherence": {
+			"Type": "Fixed",
+			"Value": 0
+		},
+		"Masking Tone Decoherence": {
+			"Type": "Fixed",
+			"DecoherencePattern": "Rectangular",
+			"TemporalDecoherence": 0,
+			"SpectralDecoherence": 40
+		},
+		"Masker": {
+			"Type": "Disabled"
+		},
+		"Masker Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
+		}
+	},
+	"Algorithm": {
+		"Type": "Simple Staircase",
+		"Reversals": 12,
+		"CorrectToStepDown": 3,
+		"WrongToStepUp": 2,
+		"StepsUp": 2,
+		"StepsDown": 1,
+		"Templates": [
+			{
+				"Type": "Target\/Masker Tone Level Ratio",
+				"AlgorithmSlot": "StaircaseParameter",
+				"StepDownBehavior": "DecreaseParameter",
+				"Step Template": {
+					"Type": "Linear",
+					"BaseStepSize": 2
+				}
+			}
+		]
+	},
+	"Version": 4
+}

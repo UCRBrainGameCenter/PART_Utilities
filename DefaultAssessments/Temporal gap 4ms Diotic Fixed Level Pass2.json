@@ -1,207 +1,97 @@
 {
-	"Version": 2,
-	"Name": "Temporal gap 4ms Diotic Fixed Level Pass2",
-	"Task": "Temporal Envelope Gap Discrimination",
-	"Algorithm": "Log Staircase",
-	"TaskType": "QAAQTask",
-	"TaskParameters": [
-		{
-			"Name": "ITI",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
+	"Type": "Custom",
+	"AssessmentName": "Temporal gap 4ms Diotic Fixed Level Pass2",
+	"Stimulus": {
+		"Type": "SequentialClicks",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
 		},
-		{
-			"Name": "TENoise",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": ""
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
 		},
-		{
-			"Name": "TENoiseLevel",
-			"Type": "Float",
-			"ValueString": "40",
-			"KeyMode": false,
-			"Key": ""
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 80,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "DisplayParameter",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": "DisplayValues"
+		"PeriStimulus Buffer": {
+			"Type": "Default",
+			"Value": 50
 		},
-		{
-			"Name": "MinSI",
-			"Type": "Float",
-			"ValueString": "0.5",
-			"KeyMode": false,
-			"Key": ""
+		"Channel Options": {
+			"Type": "Fixed Channels",
+			"LeadingChannel": "Both",
+			"FollowingChannel": "Same"
 		},
-		{
-			"Name": "ISI",
-			"Type": "Float",
-			"ValueString": "0.25",
-			"KeyMode": false,
-			"Key": ""
+		"ClickDuration": {
+			"Type": "Fixed",
+			"Value": 4,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
 		},
-		{
-			"Name": "StimLevel",
-			"Type": "Float",
-			"ValueString": "80",
-			"KeyMode": false,
-			"Key": "SensationLevelLeft"
+		"InterClick Delay": {
+			"Type": "Adaptive",
+			"Min": 0,
+			"Max": 100,
+			"Standard Behavior": {
+				"Type": "Fixed",
+				"StandardValue": 0
+			},
+			"Keys": {
+				"Initial": "InitialGap"
+			}
 		},
-		{
-			"Name": "Adapt",
-			"Type": "StringList",
-			"ValueString": "Gap Size",
-			"KeyMode": false,
-			"Key": ""
+		"Carrier Composition": {
+			"Type": "Pure Tone (Fixed)",
+			"Value": 500
 		},
-		{
-			"Name": "Presentation",
-			"Type": "StringList",
-			"ValueString": "Diotic",
-			"KeyMode": false,
-			"Key": ""
+		"Masker": {
+			"Type": "Disabled"
 		},
-		{
-			"Name": "Duration",
-			"Type": "Float",
-			"ValueString": "0.25",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Width",
-			"Type": "Float",
-			"ValueString": "0.004",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "GapDuration",
-			"Type": "Float",
-			"ValueString": "0.006",
-			"KeyMode": true,
-			"Key": "InitialGap"
-		},
-		{
-			"Name": "FreqRangeLB",
-			"Type": "Float",
-			"ValueString": "500",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FreqRangeUB",
-			"Type": "Float",
-			"ValueString": "500",
-			"KeyMode": false,
-			"Key": ""
+		"Masker Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
 		}
-	],
-	"AlgorithmParameters": [
-		{
-			"Name": "CorrectDown",
-			"Type": "Int",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
+	},
+	"Algorithm": {
+		"Type": "Staged Staircase",
+		"CorrectToStepDown": 2,
+		"WrongToStepUp": 1,
+		"Stages": {
+			"Type": "2Stages",
+			"Stage2Reversals": 6,
+			"Stage2StepsUp": 2,
+			"Stage2StepsDown": 1,
+			"Stage1Reversals": 3,
+			"Stage1StepsUp": 10,
+			"Stage1StepsDown": 5
 		},
-		{
-			"Name": "WrongUp",
-			"Type": "Int",
-			"ValueString": "1",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Reversals1",
-			"Type": "Int",
-			"ValueString": "3",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "Reversals2",
-			"Type": "Int",
-			"ValueString": "6",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AdaptUp",
-			"Type": "Bool",
-			"ValueString": "False",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "BaseStepFactor",
-			"Type": "Float",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "BaseStepFactorSteps",
-			"Type": "Float",
-			"ValueString": "10",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "InitialStepsUp",
-			"Type": "Int",
-			"ValueString": "10",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "InitialStepsDown",
-			"Type": "Int",
-			"ValueString": "5",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FinalStepsUp",
-			"Type": "Int",
-			"ValueString": "2",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "FinalStepsDown",
-			"Type": "Int",
-			"ValueString": "1",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AdaptMin",
-			"Type": "Float",
-			"ValueString": "0",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "AdaptMax",
-			"Type": "Float",
-			"ValueString": "1",
-			"KeyMode": false,
-			"Key": ""
-		},
-		{
-			"Name": "ThreshOut",
-			"Type": "Output_Val",
-			"ValueString": "GapThresholdDiotic2",
-			"KeyMode": true,
-			"Key": "GapThresholdDiotic2"
-		}
-	]
+		"Templates": [
+			{
+				"Type": "InterClick Delay",
+				"AlgorithmSlot": "StaircaseParameter",
+				"StepDownBehavior": "DecreaseParameter",
+				"Threshold": "GapThresholdDiotic2",
+				"Step Template": {
+					"Type": "Exponential",
+					"BaseMajorFactor": 2,
+					"StepsToMajorFactor": 10
+				}
+			}
+		]
+	},
+	"Version": 4
 }

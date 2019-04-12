@@ -10,12 +10,12 @@ These instructions refer to the App Store version of PART (1.3.2; 18.5.5)
 
 This guide will help you use PART to conduct your experiments. Everything you will need to know to get started using PART will be covered in the following six sections:
 
-* Section One: A brief introduction to the elements of PART
-* Section Two: Calibration procedures
-* Section Three: How to upload and download Assessments and Batteries
-* Section Four: How to program your own Battery and new Assessments
-* Section Five: How to export data
-* Section Six: References upon which these Assessments were based on from which appropriate parameter values can be obtained
+* [Section One](#section-one-introduction-to-part): A brief introduction to the elements of PART
+* [Section Two](#section-two-calibration-procedures): Calibration procedures
+* [Section Three](#section-three-uploading-and-downloading-assessments-and-batteries): How to upload and download Assessments and Batteries
+* [Section Four](#section-four-programming-your-own-assessments-and-batteries): How to program your own Battery and new Assessments
+* [Section Five](#section-five-exporting-saved-data): How to export data
+* [Section Six](#section-six-selected-references): References upon which these Assessments were based on from which appropriate parameter values can be obtained
 
 ## Section One: Introduction to PART
 
@@ -151,7 +151,7 @@ Batteries consist of multiple stages, some of which are “Assessments”. Editi
 
 ## Section Four: Programming Your Own Assessments and Batteries
 
-The PART of the instructions still in progress. The section on modifying assessments and batteries is a good place to start for now. Please contact fgallun@gmail.com with specific questions in the meantime.
+This PART of the instructions still in progress. The section on modifying assessments and batteries is a good place to start for now. Please contact fgallun@gmail.com with specific questions in the meantime.
 
 ## Section Five: Exporting Saved Data
 

@@ -10,6 +10,8 @@
 
 [PART Multiburst Rough Rough Guide PDF](PART_Multiburst.pdf)
 
+[Custom PART Experiments](CustomExperiments.md)
+
 ## PARTpers (PART Papers)
 
 [Development and validation of Portable Automated Rapid Testing (PART) measures for

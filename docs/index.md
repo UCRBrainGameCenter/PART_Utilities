@@ -1,5 +1,5 @@
 ---
-layout: default
+PARTial Programming Guide
 ---
 
 # PARTial Programming Guide Version Date: December 3, 2018

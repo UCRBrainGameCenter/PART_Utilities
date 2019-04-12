@@ -1,10 +1,14 @@
 # PART Utilities
 
-## PARTial Programming Guide
+## PARTial Programming Guides
 
 [PARTial Programming Guide Website](PARTial_Programming_Guide.md)
 
 [PARTial Programming Guide PDF](PARTial_Programming_Guide.pdf)
+
+[PART Multiburst Rough Rough Guide](PART_Multiburst.md)
+
+[PART Multiburst Rough Rough Guide PDF](PART_Multiburst.pdf)
 
 ## PARTpers (PART Papers)
 

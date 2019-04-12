@@ -45,10 +45,10 @@ A recent modification to reduce the download time is that the CRM sentences and 
 ![Figure 1a. PART Start Screen](PART_StartScreen.png)  
 *Figure 1a. PART Start Screen*
 
-![Figure 1b. Settings Menu screen](PART_StartScreen.png)  
+![Figure 1b. Settings Menu screen](PART_UserSelect.png)  
 *Figure 1b. Settings Menu screen*
 
-![Figure 1c. Modules Tab](PART_StartScreen.png)  
+![Figure 1c. Modules Tab](PART_Modules.png)  
 *Figure 1c. Modules Tab*
 
 ## Section Two: Calibration Procedures

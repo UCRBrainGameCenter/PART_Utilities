@@ -1,8 +1,6 @@
----
-PARTial Programming Guide
----
+# PARTial Programming Guide
 
-# PARTial Programming Guide Version Date: December 3, 2018
+Date: December 3, 2018
 
 These instructions refer to the App Store version of PART (1.3.2; 18.5.5)
 

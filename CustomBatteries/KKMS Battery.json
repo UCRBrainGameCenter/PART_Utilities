@@ -1,0 +1,152 @@
+{
+	"Version": 6,
+	"Name": "KKMS Battery",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Task Structure Explanation",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Welcome to the PART task battery.\n\nAll of the tasks have the same, simple objective: Compare two sounds and identify which one is \"special\".\n\nIn every task, four squares will emit a sound, one at a time.  Three of the sounds will be \"ordinary\" and one will be \"special\".  The \"special\" sound that you need to identify will always be one of the two in the middle.  The first sound and the last sound will be examples of the \"ordinary\" sound.\n\nIn the following quick example, the \"ordinary\" sound just is silence and the \"special\" sound is not.  After listening to all four sounds, tap on the square the \"special\" sound came from."
+				}
+			]
+		},
+		{
+			"Name": "Task Structure Example",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Gap Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Next you will hear several sets of rapid clicks.  One set of clicks will be slower than the others.  Can you identify the slow set?"
+				}
+			]
+		},
+		{
+			"Name": "Temporal Gap Examples",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Gap Instructions 2",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Good job.  Now we'll do a harder version.  Continue to identify the set of clicks with the larger gap.\n\nThis task will try to find the smallest gap you can hear, so if you're not sure, just guess.  When the program finds the smallest gap you can hear, it will automatically move on to the final part."
+				}
+			]
+		},
+		{
+			"Name": "KKMS Temporal Gap",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "In the last task, you will be listening for a small amount of warping among noise.  As before, this warping will only be present in one of the center two sounds.\n\nCan you identify the sound with the warping?\n\nHere is a simple example."
+				}
+			]
+		},
+		{
+			"Name": "STM Example",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Instructions 2",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Now you will do the complete task.  Like before, your goal is to identify the noise with the warping.\n\nThis test will try to find the smallest warping you can hear, so if you are unsure which choice had the warping, just submit a guess.  When the program finds the smallest warping you can hear, the test will repeat once more, and then it will end."
+				}
+			]
+		},
+		{
+			"Name": "KKMS STM 4-Interval Task",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "STM Up\/Down",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Now we will try something a little different with the same sounds.\n\nIf the ripple is Rising, drag the top card Upwards.\nIf the ripple is Falling, drag it Downwards.\n\nYou will occasionally see special Blue and Green cards, that will remind you what the new Up and Down ripples sound like."
+				}
+			]
+		},
+		{
+			"Name": "KKMS STM UD Test",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "CRM Instructions",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Now you will hear simple instructions about a Color and a Number.\n\nThey will all say \"Ready Charlie, Go to \" followed by a Color and a Number.\n\nPress the button of that color and number."
+				}
+			]
+		},
+		{
+			"Name": "KKMS Spatial Release Threshold",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Modifier",
+			"Name": "SR Mod Step",
+			"Modifiers": [
+				{
+					"Type": "KeyValue",
+					"InputKey": "DetectionThreshold",
+					"Value": 30,
+					"Operation": "Plus",
+					"OutputKey": "TargetPresentationLevel"
+				},
+				{
+					"Type": "KeyValue",
+					"InputKey": "DetectionThreshold",
+					"Value": 20,
+					"Operation": "Plus",
+					"OutputKey": "MaskerPresentationLevel"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "CRM Instructions 2",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Now there will be several voices.\n\nOnly follow the directions addressed to \"Charlie\".\n\nGood Luck!"
+				}
+			]
+		},
+		{
+			"Name": "KKMS Spatial Release Colocated",
+			"Type": "Assessment"
+		},
+		{
+			"Name": "KKMS Spatial Release Separated",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Completed",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Congratulations!\n\nYou are finished with the PART battery."
+				}
+			]
+		}
+	]
+}

@@ -40,13 +40,13 @@ At this time, only a single default Battery is included (‘Listen Battery v2’
 
 A recent modification to reduce the download time is that the CRM sentences and TEN maskers have been removed from the app and are now available as optional downloads. Unless you know you won’t need them, downloading them is recommended to avoid errors with batteries that need them. The best practice is, immediately after installing PART, to go to the Modules screen and download all optional modules. A screenshot of where the Modules tab can be found on the Settings screen is shown below. To get to the settings screen, tap the Settings button on the main screen, shown in **Figure 1a**.
 
-![Figure 1a. PART Start Screen](PART_StartScreen.png)  
+![Figure 1a. PART Start Screen](Images/PART_StartScreen.png)  
 *Figure 1a. PART Start Screen*
 
-![Figure 1b. Settings Menu screen](PART_UserSelect.png)  
+![Figure 1b. Settings Menu screen](Images/PART_UserSelect.png)  
 *Figure 1b. Settings Menu screen*
 
-![Figure 1c. Modules Tab](PART_Modules.png)  
+![Figure 1c. Modules Tab](Images/PART_Modules.png)  
 *Figure 1c. Modules Tab*
 
 ## Section Two: Calibration Procedures
@@ -63,7 +63,7 @@ Calibration is a crucial step in the use of PART. The goal of the calibration is
   * Enter the unlock code: 3141, and tap “Confirm”. This will reveal the “Select User”, “Sound Verification”, and “Calibration” tabs (see **Figure 2**).
   * Tap the “Sound Verification” tab, which will reveal the screen shown in **Figure 1b**. If the Calibration Source does not read “Default Profile”, tap the “Reset” button.
 
-![Figure 2. PART Sound Verification Screen](PART_SoundVerificationScreen.png)  
+![Figure 2. PART Sound Verification Screen](Images/PART_SoundVerificationScreen.png)  
 *Figure 2. PART Sound Verification Screen*
 
 ### Step 2. Assemble the Calibration Hardware
@@ -72,7 +72,7 @@ Assembling the calibration hardware involves plugging transducers into the devic
 
 If calibration cannot be conducted routinely using laboratory equipment, we have verified that an iBoundary microphone attached to an iPad running the NIOSH SLM app can provide the appropriate calibration. Note, however, that the NIOSH SLM needs to first be calibrated in the laboratory with the external microphone attached, so this may only be of use for field calibration or spot checking. **Figure 3** shows this setup.
 
-![Figure 3a. Calibration with NIOSH SLM app running on second iPad and iBoundary microphone](CalibrationA.png "Figure 3a") ![Figure 3b. Calibration with NIOSH SLM app, showing microphone underneath headphones](CalibrationB.png "Figure 3b")  
+![Figure 3a. Calibration with NIOSH SLM app running on second iPad and iBoundary microphone](Images/CalibrationA.png "Figure 3a") ![Figure 3b. Calibration with NIOSH SLM app, showing microphone underneath headphones](Images/CalibrationB.png "Figure 3b")  
 *Figure 3a. Calibration with NIOSH SLM app running on second iPad and iBoundary microphone*  
 *Figure 3b. Calibration with NIOSH SLM app, showing microphone underneath headphones*
 
@@ -87,7 +87,7 @@ If calibration cannot be conducted routinely using laboratory equipment, we have
 
 To verify the calibration, select a range of Presentation Levels and Test Channels and tap the Play button. The measured sound should match the Presentation Level. If this occurs, the system is calibrated. If not, repeat Step 3. To begin testing, choose the Select User tab and select a user, which will reveal the main menu (**Figure 1a**).
 
-![Figure 4. PART Calibration Screen](CalibrationScreen.png "Figure 4")  
+![Figure 4. PART Calibration Screen](Images/CalibrationScreen.png "Figure 4")  
 *Figure 4. PART Calibration Screen*
 
 ## Section Three: Uploading and Downloading Assessments and Batteries
@@ -104,7 +104,7 @@ A folder has been uploaded to Dropbox that contains the Custom Assessments and C
 
 Start by downloading and installing the iExplorer 3.9.11 application on your Mac or Windows computer. Then double-click the icon to open iExplorer.
 
-![Figure 5](iExplorerA.png "Figure 5")  
+![Figure 5](Images/iExplorerA.png "Figure 5")  
 *Figure 5*
 
 When you open iExplorer, be sure to click the “Continue in Demo Mode” button.
@@ -115,7 +115,7 @@ The application will open, and if your iPad is connected, you will see the files
 
 Go into the Documents folder and add them to the Custom folders you'll find there (**Figure 6**).
 
-![Figure 6](iExplorerB.png "Figure 6")  
+![Figure 6](Images/iExplorerB.png "Figure 6")  
 *Figure 6*
 
 ### Creating and Modifying Assessments and Batteries within PART
@@ -144,7 +144,7 @@ Batteries consist of multiple stages, some of which are “Assessments”. Editi
 * The stimulus level is currently set to “50”. Tap it and edit it to say 70, by typing the new value and choosing “Done”. I then chose “Save”. Note that you cannot save over a default assessment with the same name.
 * To change the name, edit the “Assessment Name” field on the General tab.
 
-![Figure 7](PartBatteryTiles.jpg "Figure 7")  
+![Figure 7](Images/PartBatteryTiles.jpg "Figure 7")  
 *Figure 7*
 
 ## Section Four: Programming Your Own Assessments and Batteries
@@ -163,10 +163,10 @@ iExplorer 3.9.11 can be found and downloaded online and can be run in demo mode,
 
 As illustrated below in **Figure 8**, you will see a series of options on the left side of the window, one of which is “Apps”. Click this to view the apps that have data saved on the iPad, and then click on PART. Click “Documents” to reveal the “Logs” folder, where all the data are saved in folders with the Subject ID you entered when you ran the battery as the name of the folder. In the example below, we put in “OHSU” as the Subject ID.
 
-![Figure 8](UsingiExplorerA.png "Figure 8")  
+![Figure 8](Images/UsingiExplorerA.png "Figure 8")  
 *Figure 8*
 
-![Figure 9](UsingiExplorerB.png "Figure 9")  
+![Figure 9](Images/UsingiExplorerB.png "Figure 9")  
 *Figure 9*
 
 **Right click** on the entire Log file on the left side of the screen or on the individual text files you wish to copy and hit **Export**.
@@ -177,24 +177,24 @@ Do not try to drag or copy & paste the folder/files from iExplorer to a new fold
 
 We have had less success using iTunes, but it does allow the Logs to be exported, as shown below in **Figure 10**.
 
-![Figure 10](UsingiTunesA.png "Figure 10")  
+![Figure 10](Images/UsingiTunesA.png "Figure 10")  
 *Figure 10*
 
-![Figure 11](UsingiTunesB.png "Figure 11")  
+![Figure 11](Images/UsingiTunesB.png "Figure 11")  
 *Figure 11*
 
 ### Viewing Data in MS Excel
 
-![Figure 12](ExcelA.png "Figure 12")  
+![Figure 12](Images/ExcelA.png "Figure 12")  
 *Figure 12*
 
-![Figure 13](ExcelB.png "Figure 13")  
+![Figure 13](Images/ExcelB.png "Figure 13")  
 *Figure 13*
 
-![Figure 14](ExcelC.png "Figure 14")  
+![Figure 14](Images/ExcelC.png "Figure 14")  
 *Figure 14*
 
-![Figure 15](ExcelD.png "Figure 15")  
+![Figure 15](Images/ExcelD.png "Figure 15")  
 *Figure 15*
 
 ## Section Six: Selected References

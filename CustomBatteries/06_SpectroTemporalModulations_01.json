@@ -1,0 +1,88 @@
+{
+	"Version": 6,
+	"Name": "06_SpectroTemporalModulations_01",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nOne of these sounds is not like the others...\n\nOn every trial, four squares will be presented on screen. They will light up and emit a sound, one at a time. The first and the last squares will always carry some type of \"ordinary\" sound. One of the two squares in the middle will have a \"special\" modification, the other will carry \"ordinary\" sound. Your task is to identify which of the squares in the middle carries the \"special\" sound. "
+				}
+			]
+		},
+		{
+			"Name": "STMpractice_01",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nNow the modification that makes the sound “special” will lessen until you cannot detect it all of the time. Please try to guess if unsure. "
+				}
+			]
+		},
+		{
+			"Name": "TemporalSensitivity_01",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Break",
+			"Duration": 15,
+			"BreakText": "Battery will resume after a short break.",
+			"AllowSkip": true,
+			"AutoEnd": true
+		},
+		{
+			"Name": "SpectralSensitivity_01",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Break",
+			"Duration": 15,
+			"BreakText": "Battery will resume after a short break.",
+			"AllowSkip": true,
+			"AutoEnd": true
+		},
+		{
+			"Name": "SpectroTemporalSensitivity_01",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results. Please show this screen to the experimenter.",
+			"Reports": [
+				{
+					"Label": "TemporalSensitivityThreshold",
+					"Type": 1,
+					"Key": "TemporalSensitivityThreshold"
+				},
+				{
+					"Label": "SpectralSensitivityThreshold",
+					"Type": 1,
+					"Key": "SpectralSensitivityThreshold"
+				},
+				{
+					"Label": "SpectroTemporalSensitivityThreshold",
+					"Type": 1,
+					"Key": "SpectroTemporalSensitivityThreshold"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nYou have completed this part of the evaluation, please let an experimenter know you are done :)"
+				}
+			]
+		}
+	]
+}

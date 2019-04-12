@@ -1,0 +1,97 @@
+{
+	"Type": "Custom",
+	"AssessmentName": "STMpractice_01",
+	"Stimulus": {
+		"Type": "STM",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
+		},
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
+		},
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 65,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Presentation": {
+			"Type": "Fixed Lateralization",
+			"Value": "Both"
+		},
+		"Stimulus Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
+		},
+		"Ripple Direction": {
+			"Type": "Random",
+			"GenerationFrequency": "Interval"
+		},
+		"Stimulus Duration": {
+			"Type": "Fixed",
+			"Value": 500,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Modulation Depth": {
+			"Type": "Fixed",
+			"Modulation Envelope": {
+				"Type": "Exponential",
+				"Value": 6,
+				"Standard Behavior": {
+					"Type": "Fixed",
+					"StandardValue": 0
+				}
+			}
+		},
+		"Temporal Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 4,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Spectral Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 2,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Carrier Composition": {
+			"Type": "Noise",
+			"FrequencyDistribution": "Linear",
+			"LowerBound": 400,
+			"UpperBound": 8000,
+			"CarrierCount": 10000,
+			"AmplitudeDistribution": "Rayleigh",
+			"AmplitudeFactor": "White",
+			"CarrierPhase": "Random"
+		},
+		"Masker": {
+			"Type": "Disabled"
+		},
+		"MaskerB": {
+			"Type": "Disabled"
+		}
+	},
+	"Algorithm": {
+		"Type": "Fixed Presentation",
+		"Trials": 5,
+		"Templates": [
+		]
+	},
+	"Version": 6
+}

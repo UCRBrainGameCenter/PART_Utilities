@@ -1,0 +1,10 @@
+{
+	"Version": 6,
+	"Name": "MBS Kidd",
+	"BatteryStages": [
+		{
+			"Name": "MultiBurstSame_Kidd",
+			"Type": "Assessment"
+		}
+	]
+}

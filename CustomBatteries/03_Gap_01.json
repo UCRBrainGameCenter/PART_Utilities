@@ -1,0 +1,56 @@
+{
+	"Version": 6,
+	"Name": "03_Gap_01",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nNext, each of the squares will carry two clicks so close to each other they sound like only one.  One of the squares in the middle will carry a pair of clicks with a bigger separation between them so they will sound slightly different. Your task is to identify the square with the different pair of clicks. "
+				}
+			]
+		},
+		{
+			"Name": "GapPractice_01 ",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nNow we'll do a harder version.  Continue to identify the square with the set of different clicks. This task will try to find the smallest modification you can hear, so at some point you will reach your hearing limit. At that point if you're not sure, just guess :) "
+				}
+			]
+		},
+		{
+			"Name": "TemporalGap4ms_01 ",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results. Please show this screen to the experimenter",
+			"Reports": [
+				{
+					"Label": "Gap",
+					"Type": 1,
+					"Key": "GapThreshold"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nYou completed this part of your evaluation. Please let the experimenter know you are done :)"
+				}
+			]
+		}
+	]
+}

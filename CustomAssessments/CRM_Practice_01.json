@@ -1,0 +1,86 @@
+{
+	"Type": "Custom",
+	"AssessmentName": "CRM_Practice_01",
+	"Stimulus": {
+		"Type": "CRMSpatialRelease",
+		"Task Configuration": {
+			"Type": "CRM Grid",
+			"Interruptable": false,
+			"AutoAdvance": true,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
+		},
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
+		},
+		"Target Track": {
+			"Type": "Fixed Level",
+			"Value": 65,
+			"Audio Position": {
+				"Type": "Forward"
+			},
+			"Presentation": {
+				"Type": "Binaural"
+			},
+			"Talker Selection": {
+				"Type": "Custom Random Talker",
+				"GenerationFrequency": "Trial",
+				"ExcludePrevious": true,
+				"Talker0": true,
+				"Talker1": true,
+				"Talker2": true,
+				"Talker3": false,
+				"Talker4": false,
+				"Talker5": false,
+				"Talker6": false,
+				"Talker7": false
+			},
+			"Callsign Selection": {
+				"Type": "Fixed Callsign",
+				"Callsign": "Charlie"
+			},
+			"Number Selection": {
+				"Type": "Random Number",
+				"GenerationFrequency": "Trial",
+				"ExcludePrevious": true
+			},
+			"Color Selection": {
+				"Type": "Random Color",
+				"GenerationFrequency": "Trial",
+				"ExcludePrevious": true
+			}
+		},
+		"Masking Track 1": {
+			"Type": "Disabled"
+		},
+		"Masking Track 2": {
+			"Type": "Disabled"
+		},
+		"Masker": {
+			"Type": "Disabled"
+		},
+		"MaskerB": {
+			"Type": "Disabled"
+		},
+		"Masker Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
+		},
+		"PostGenLevelAdjustment": {
+			"Type": "Disabled"
+		}
+	},
+	"Algorithm": {
+		"Type": "Fixed Presentation",
+		"Trials": 5,
+		"Templates": [
+		]
+	},
+	"Version": 6
+}

@@ -1,0 +1,75 @@
+{
+	"Type": "Custom",
+	"AssessmentName": "GapPractice_01 ",
+	"Stimulus": {
+		"Type": "SequentialClicks",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
+		},
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
+		},
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 80,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"PeriStimulus Buffer": {
+			"Type": "Default",
+			"Value": 50
+		},
+		"Channel Options": {
+			"Type": "Fixed Channels",
+			"LeadingChannel": "Both",
+			"FollowingChannel": "Same"
+		},
+		"ClickDuration": {
+			"Type": "Fixed",
+			"Value": 4,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"InterClick Delay": {
+			"Type": "Fixed",
+			"Value": 20,
+			"Standard Behavior": {
+				"Type": "Fixed",
+				"StandardValue": 0
+			}
+		},
+		"Carrier Composition": {
+			"Type": "Pure Tone (Fixed)",
+			"Value": 500
+		},
+		"Masker": {
+			"Type": "Disabled"
+		},
+		"MaskerB": {
+			"Type": "Disabled"
+		},
+		"Masker Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
+		}
+	},
+	"Algorithm": {
+		"Type": "Fixed Presentation",
+		"Trials": 5,
+		"Templates": [
+		]
+	},
+	"Version": 6
+}

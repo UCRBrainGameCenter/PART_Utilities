@@ -1,0 +1,58 @@
+{
+	"Version": 6,
+	"Name": "Souza STM Detection Battery July 2018",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "First, let’s begin by measuring the volume at which you can barely detect the test’s sound, starting with your left ear.\n\nYou will see four targets light up on the screen. A sound will play while one of the middle two targets are lit up. After all four targets have lit up, tap on the target that coincided with the sound you heard."
+				}
+			]
+		},
+		{
+			"Name": "STM Detection Threshold Left July 2018",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Now we will repeat the same process for your right ear."
+				}
+			]
+		},
+		{
+			"Name": "STM Detection Threshold Right July 2018",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Break",
+			"Duration": 120,
+			"BreakText": "Please take a short break.",
+			"AllowSkip": true,
+			"AutoEnd": false
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results.",
+			"Reports": [
+				{
+					"Label": "Left Ear Quiet Detection Threshold",
+					"Type": 1,
+					"Key": "LeftSTMDetectThreshold"
+				},
+				{
+					"Label": "Right Ear Quiet Detection Threshold",
+					"Type": 1,
+					"Key": "RightSTMDetectThreshold"
+				}
+			]
+		}
+	]
+}

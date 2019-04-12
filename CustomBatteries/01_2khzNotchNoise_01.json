@@ -1,0 +1,72 @@
+{
+	"Version": 6,
+	"Name": "01_2khzNotchNoise_01",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nWelcome to PART!\n\nIn this experiment, you will be responding to different series of sounds to test your hearing. In this first example, 4 squares will be presented, and will light up sequentially one after another. Three of these squares will be silent and one will make a sound. Your job is to find and touch the square that makes a sound as it lights up. "
+				}
+			]
+		},
+		{
+			"Name": "DetectionInQuiet",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nNext, you will be looking for the same bip sound, but this time, noise will play on every square. Your job is to find the square that makes a bip sound in addition to the noise. The program will try to find the amount of noise necessary for you to be unable to find the bip sound, just try your best and guess if you are uncertain.\n\nHint: the first and last squares never contain the bip. "
+				}
+			]
+		},
+		{
+			"Name": "NotchNoise-sym0protect",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Break",
+			"Duration": 10,
+			"BreakText": "Battery will resume after a short break.",
+			"AllowSkip": true,
+			"AutoEnd": true
+		},
+		{
+			"Name": "NotchNoise-sym400protect",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results. Here are your results. Please show this screen to the experimenter. ",
+			"Reports": [
+				{
+					"Label": "Mask400",
+					"Type": 1,
+					"Key": "Mask400"
+				},
+				{
+					"Label": "Mask0",
+					"Type": 1,
+					"Key": "Mask0"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nYou have completed this part of the evaluation, please let an experimenter know you are done :)"
+				}
+			]
+		}
+	]
+}

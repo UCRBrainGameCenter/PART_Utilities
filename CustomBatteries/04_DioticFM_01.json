@@ -1,0 +1,56 @@
+{
+	"Version": 6,
+	"Name": "04_DioticFM_01",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nNow the sound modification will be slightly different. Instead of wobbling between your ears, one of the sounds will fade in and out. Can you detect the modified “special” sound?"
+				}
+			]
+		},
+		{
+			"Name": "DioticFMpractice_01 ",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nNow it will get harder, ready? \nTry to guess if unsure. "
+				}
+			]
+		},
+		{
+			"Name": "DioticFM_01 ",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results. Please show this screen to the experimenter",
+			"Reports": [
+				{
+					"Label": "DioticFMThreshold",
+					"Type": 1,
+					"Key": "DioticFMThreshold"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nYou completed this part of your evaluation. Please let the experimenter know you are done :)"
+				}
+			]
+		}
+	]
+}

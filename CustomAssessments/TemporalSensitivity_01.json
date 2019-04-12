@@ -1,0 +1,119 @@
+{
+	"Type": "Custom",
+	"AssessmentName": "TemporalSensitivity_01",
+	"Stimulus": {
+		"Type": "STM",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 2000
+			}
+		},
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
+		},
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 65,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Presentation": {
+			"Type": "Fixed Lateralization",
+			"Value": "Both"
+		},
+		"Stimulus Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
+		},
+		"Ripple Direction": {
+			"Type": "Random",
+			"GenerationFrequency": "Interval"
+		},
+		"Stimulus Duration": {
+			"Type": "Fixed",
+			"Value": 500,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Modulation Depth": {
+			"Type": "Adaptive",
+			"Modulation Envelope": {
+				"Type": "Exponential",
+				"Initial": 6,
+				"Min": 0.200000002980232,
+				"Max": 40,
+				"Standard Behavior": {
+					"Type": "Fixed",
+					"StandardValue": 0
+				}
+			}
+		},
+		"Temporal Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 4,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Spectral Modulation Rate": {
+			"Type": "Fixed",
+			"Value": 0,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Carrier Composition": {
+			"Type": "Noise",
+			"FrequencyDistribution": "Linear",
+			"LowerBound": 400,
+			"UpperBound": 8000,
+			"CarrierCount": 10000,
+			"AmplitudeDistribution": "Rayleigh",
+			"AmplitudeFactor": "White",
+			"CarrierPhase": "Random"
+		},
+		"Masker": {
+			"Type": "Disabled"
+		},
+		"MaskerB": {
+			"Type": "Disabled"
+		}
+	},
+	"Algorithm": {
+		"Type": "Staged Staircase",
+		"CorrectToStepDown": 2,
+		"WrongToStepUp": 1,
+		"Stages": {
+			"Type": "2Stages",
+			"Stage2Reversals": 6,
+			"Stage2StepsUp": 2,
+			"Stage2StepsDown": 1,
+			"Stage1Reversals": 2,
+			"Stage1StepsUp": 10,
+			"Stage1StepsDown": 5
+		},
+		"Templates": [
+			{
+				"Type": "Modulation Envelope",
+				"AlgorithmSlot": "StaircaseParameter",
+				"StepDownBehavior": "DecreaseParameter",
+				"Threshold": "TemporalSensitivityThreshold",
+				"Step Template": {
+					"Type": "Linear",
+					"BaseStepSize": 0.100000001490116
+				}
+			}
+		]
+	},
+	"Version": 6
+}

@@ -1,0 +1,56 @@
+{
+	"Version": 6,
+	"Name": "02_DichoticFM_01",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nOne of these sounds wobbles...\n\nOn every trial, four squares will be presented on screen. One of the two squares in the middle will have a \"special\" modification, the sound they emit will seem to wobble between your ears! Your task is to identify which of the squares in the middle carries the \"special\" wobbling sound. "
+				}
+			]
+		},
+		{
+			"Name": "DichoticFMpractice_01 ",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nNow the modification that makes the sound wobble will lessen until you cannot detect it all the time. Please try to guess if unsure. "
+				}
+			]
+		},
+		{
+			"Name": "DichoticFM_01 ",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results. Please show this screen to the experimenter",
+			"Reports": [
+				{
+					"Label": "DichoticFMThreshold",
+					"Type": 1,
+					"Key": "DichoticFMThreshold"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nYou completed this part of your evaluation. Please let the experimenter know you are done :)"
+				}
+			]
+		}
+	]
+}

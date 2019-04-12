@@ -1,0 +1,166 @@
+{
+	"Type": "Custom",
+	"AssessmentName": "CRM_Separated_01",
+	"Stimulus": {
+		"Type": "CRMSpatialRelease",
+		"Task Configuration": {
+			"Type": "CRM Grid",
+			"Interruptable": false,
+			"AutoAdvance": true,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
+		},
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
+		},
+		"Target Track": {
+			"Type": "Fixed Level",
+			"Value": 65,
+			"Audio Position": {
+				"Type": "Forward"
+			},
+			"Presentation": {
+				"Type": "Binaural"
+			},
+			"Talker Selection": {
+				"Type": "Custom Random Talker",
+				"GenerationFrequency": "Trial",
+				"ExcludePrevious": true,
+				"Talker0": true,
+				"Talker1": true,
+				"Talker2": true,
+				"Talker3": false,
+				"Talker4": false,
+				"Talker5": false,
+				"Talker6": false,
+				"Talker7": false
+			},
+			"Callsign Selection": {
+				"Type": "Fixed Callsign",
+				"Callsign": "Charlie"
+			},
+			"Number Selection": {
+				"Type": "Random Number",
+				"GenerationFrequency": "Trial",
+				"ExcludePrevious": true
+			},
+			"Color Selection": {
+				"Type": "Random Color",
+				"GenerationFrequency": "Trial",
+				"ExcludePrevious": true
+			}
+		},
+		"Masking Track 1": {
+			"Type": "Adaptive Level",
+			"Initial": 55,
+			"Min": 0,
+			"Max": 90,
+			"Audio Position": {
+				"Type": "Right",
+				"SpatialOffset": "SO_45"
+			},
+			"Presentation": {
+				"Type": "Binaural"
+			},
+			"Talker Selection": {
+				"Type": "Draw From Target Set",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			},
+			"Callsign Selection": {
+				"Type": "Random Callsign",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			},
+			"Number Selection": {
+				"Type": "Draw From Target Set",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			},
+			"Color Selection": {
+				"Type": "Draw From Target Set",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			}
+		},
+		"Masking Track 2": {
+			"Type": "Adaptive Level",
+			"Initial": 55,
+			"Min": 0,
+			"Max": 100,
+			"Audio Position": {
+				"Type": "Left",
+				"SpatialOffset": "SO_45"
+			},
+			"Presentation": {
+				"Type": "Binaural"
+			},
+			"Talker Selection": {
+				"Type": "Draw From Target Set",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			},
+			"Callsign Selection": {
+				"Type": "Random Callsign",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			},
+			"Number Selection": {
+				"Type": "Draw From Target Set",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			},
+			"Color Selection": {
+				"Type": "Draw From Target Set",
+				"GenerationFrequency": "Trial",
+				"EnforceExclusivity": true
+			}
+		},
+		"Masker": {
+			"Type": "Disabled"
+		},
+		"MaskerB": {
+			"Type": "Disabled"
+		},
+		"Masker Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
+		},
+		"PostGenLevelAdjustment": {
+			"Type": "Disabled"
+		}
+	},
+	"Algorithm": {
+		"Type": "Progressive",
+		"Tracks": 2,
+		"Steps": 10,
+		"Templates": [
+			{
+				"Type": "Masking Track 1",
+				"AlgorithmSlot": "ProgressiveParameter",
+				"DecreaseParameter": false,
+				"Threshold": "MaskLvls",
+				"Step Template": {
+					"Type": "Linear",
+					"BaseStepSize": 2
+				}
+			},
+			{
+				"Type": "Masking Track 2",
+				"AlgorithmSlot": "ProgressiveParameter",
+				"DecreaseParameter": false,
+				"Step Template": {
+					"Type": "Linear",
+					"BaseStepSize": 2
+				}
+			}
+		]
+	},
+	"Version": 6
+}

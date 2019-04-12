@@ -1,0 +1,82 @@
+{
+	"Type": "Custom",
+	"AssessmentName": "DichoticFMpractice_01 ",
+	"Stimulus": {
+		"Type": "FM",
+		"Task Configuration": {
+			"Type": "Four Interval",
+			"InterstimInterval": 250,
+			"MinStimInterval": 500,
+			"Intertrial Interval": {
+				"Type": "Fixed",
+				"Value": 1000
+			}
+		},
+		"Testing Features": {
+			"Type": "Default",
+			"DisplayParams": false
+		},
+		"Stimulus Level": {
+			"Type": "Fixed",
+			"Value": 75,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Stimulus Window": {
+			"Type": "Default",
+			"Windowing Function": {
+				"Type": "Hamming",
+				"Value": 10
+			}
+		},
+		"Stimulus Duration": {
+			"Type": "Fixed",
+			"Value": 400,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"Modulation Presentation": {
+			"Type": "Binaural",
+			"FMBothBehavior": "Inverted"
+		},
+		"FMRate": {
+			"Type": "Fixed",
+			"Value": 2,
+			"Standard Behavior": {
+				"Type": "Mirrored"
+			}
+		},
+		"FMRange": {
+			"Type": "Fixed",
+			"Value": 3,
+			"Standard Behavior": {
+				"Type": "Fixed",
+				"StandardValue": 0
+			}
+		},
+		"Carrier Composition": {
+			"Type": "Pure Tone (Roving)",
+			"GenerationFrequency": "Interval",
+			"Roving Behavior": {
+				"Type": "Linear Range Rove",
+				"LowerBound": 460,
+				"UpperBound": 540
+			}
+		},
+		"Masker": {
+			"Type": "Disabled"
+		},
+		"MaskerB": {
+			"Type": "Disabled"
+		}
+	},
+	"Algorithm": {
+		"Type": "Fixed Presentation",
+		"Trials": 7,
+		"Templates": [
+		]
+	},
+	"Version": 6
+}

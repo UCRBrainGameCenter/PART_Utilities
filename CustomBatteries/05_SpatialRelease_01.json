@@ -1,0 +1,72 @@
+{
+	"Version": 6,
+	"Name": "05_SpatialRelease_01",
+	"BatteryStages": [
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nIn each trial, you will hear a person call the name Charlie followed by the directions to go to a specific combination of color and number. Press the button on the grid that corresponds to such directions."
+				}
+			]
+		},
+		{
+			"Name": "CRM_Practice_01",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nThis time, in each trial, two other talkers will be calling other people (not Charlie) as well as colors and numbers trying to distract you. Try to ignore them and only respond to the talker giving instructions to Charlie."
+				}
+			]
+		},
+		{
+			"Name": "CRM_Colocated_01",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Break",
+			"Duration": 20,
+			"BreakText": "Battery will resume after a short break.",
+			"AllowSkip": true,
+			"AutoEnd": true
+		},
+		{
+			"Name": "CRM_Separated_01",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results. Please show this screen to the experimenter. ",
+			"Reports": [
+				{
+					"Label": "Separated",
+					"Type": 1,
+					"Key": "MaskLvls"
+				},
+				{
+					"Label": "Colocated",
+					"Type": 1,
+					"Key": "MaskLvlc"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "\nThis test is complete, please let the experimenter know you are done :)"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,95 @@
+{
+	"Version": 6,
+	"Name": "Souza STM Sensitivity Battery July 2018",
+	"BatteryStages": [
+		{
+			"Type": "Input",
+			"Name": "Input Window",
+			"Instructions": "Enter Thresholds for Detection in Quiet (run Detection Battery to find these values)",
+			"Inputs": [
+				{
+					"Label": "Left Ear Detection in Quiet",
+					"Type": 1,
+					"Key": "LeftSTMDetectThreshold"
+				},
+				{
+					"Label": "Right Ear Detection in Quiet",
+					"Type": 1,
+					"Key": "RightSTMDetectThreshold"
+				}
+			]
+		},
+		{
+			"Type": "Modifier",
+			"Name": "Modifier Stage",
+			"Modifiers": [
+				{
+					"Type": "KeyValue",
+					"InputKey": "LeftSTMDetectThreshold",
+					"Value": 30,
+					"Operation": "Plus",
+					"OutputKey": "PresentationLevelLeft"
+				},
+				{
+					"Type": "KeyValue",
+					"InputKey": "RightSTMDetectThreshold",
+					"Value": 30,
+					"Operation": "Plus",
+					"OutputKey": "PresentationLevelRight"
+				}
+			]
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Welcom to the Spectrotemporal Modulation Sensitivity task.\n\nHere, we are goling to measure your ability to detect small but specific changes among a group of sounds.\n\nOnce we begin, there will be four targets on the screen. One at a time, each target will light up and a sound will play. One of the middle two targets will sound just a bit different than all of the others. Your task is to identify which middle target played a sound that was different. Let’s start with just your left ear."
+				}
+			]
+		},
+		{
+			"Name": "STM Sensitivity Threshold Left July 2018",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Instruction",
+			"Header": "Instructions Window",
+			"Instructions": [
+				{
+					"Type": "Text",
+					"Text": "Well done, you’re almost finished.\n\nWe will now repeat the test for your right ear."
+				}
+			]
+		},
+		{
+			"Name": "STM Sensitivity Threshold Right July 2018",
+			"Type": "Assessment"
+		},
+		{
+			"Type": "Break",
+			"Duration": 30,
+			"BreakText": "Thank you. Please notify the experimenter.",
+			"AllowSkip": true,
+			"AutoEnd": true
+		},
+		{
+			"Type": "Report",
+			"Header": "Results",
+			"Text": "Here are your results.",
+			"Reports": [
+				{
+					"Label": "Left STM Sensitivity Threshold",
+					"Type": 1,
+					"Key": "LeftSTMSensitivityThreshold"
+				},
+				{
+					"Label": "Right STM Sensitivity Threshold",
+					"Type": 1,
+					"Key": "RightSTMSensitivityThreshold"
+				}
+			]
+		}
+	]
+}

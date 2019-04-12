@@ -19,9 +19,9 @@ This guide will help you use PART to conduct your experiments. Everything you wi
 
 ## Section One: Introduction to PART
 
-A full introduction to PART can be found here: http://bgc.ucr.edu/games/part/
+A full introduction to PART can be found here: <http://bgc.ucr.edu/games/part/>
 
-To get started, download PART from the Apple iTunes app store: https://itunes.apple.com/us/app/p-a-r-t/id1126512332?mt=8
+To get started, download PART from the Apple iTunes app store: <https://itunes.apple.com/us/app/p-a-r-t/id1126512332?mt=8>
 
 PART is designed to present one or more customizable “Assessments” arranged in a customizable “Battery”. A set of prepared default assessments and batteries included in the application. These default sets cannot be altered, but modified versions can be saved with new names and new sets of parameters and batteries can be created and saved. Data are saved to the iPad and are not transmitted to any other location. To access the saved data, iTunes or other software can be used to share the files for custom assessments and batteries as well as logs of user data. Calibration of PART (see Section Two) can be easily conducted using external equipment capable of measuring the precise output of the iPad (i.e., a sound level meter and flat plate coupler).
 
@@ -100,7 +100,7 @@ PART comes with a set of default test assessments and batteries, but it can also
 
 A folder has been uploaded to Dropbox that contains the Custom Assessments and Custom Batteries that we are testing, so you can add them to PART and try them out. You will need to download new “Custom Battery” and “Custom Assessment” files from this Dropbox folder and copy them onto the iPad using a program such as iExplorer.
 
-http://tiny.cc/PART
+<http://tiny.cc/PART>
 
 ### To Install iExplorer
 
@@ -159,7 +159,7 @@ You may choose whether or not to display data on the screen following a test bat
 
 In order to move data from the iPad apps to your computer, we suggest using iExplorer 3.9.11 (do NOT use iExplorer version 4 as it does not allow you to export the files from the folders).
 
-iExplorer 3.9.11 can be found and downloaded online and can be run in demo mode, so there is no need to buy a license. There is also a copy available on Dropbox: http://tiny.cc/PART
+iExplorer 3.9.11 can be found and downloaded online and can be run in demo mode, so there is no need to buy a license. There is also a copy available on Dropbox: <http://tiny.cc/PART>
 
 ### Exporting PART Data with iExplorer
 

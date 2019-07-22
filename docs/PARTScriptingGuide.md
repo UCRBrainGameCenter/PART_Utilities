@@ -4,7 +4,7 @@ The scripting language used in PART has been modeled closely after the basic syn
 
 ## Data Types
 
-There are four datatypes currently implemented in PART scripts.  These are Integers, Doubles, Strings, and Booleans.
+There are four basic datatypes currently implemented in PART scripts.  These are Integers, Doubles, Strings, and Booleans.
 
 **Integers**, or `int` in declarations, are signed 32-bit integers. This means that they cannot hold any fractional values (values after the decimal place are automatically `floor`ed), can hold a value anywhere between −2,147,483,648 and 2,147,483,647.
 
@@ -269,3 +269,54 @@ And the functions used to set the data are as follows
 * `SetDouble(key,value)`
 * `SetBool(key,value)`
 * `SetString(key,value)`
+
+And the following help with management and cleanup
+
+* `HasData(key)`
+* `ClearData(key)`
+
+## Lists
+
+A List is a flexible collection of data.  You declare a list much like other data types, expect you specify what type of data it holds inside angle brackets, and construct one with `new`, like this:
+
+```C#
+List<int> anExampleIntList = new List<int>();
+anExampleIntList.Add(1);
+anExampleIntList.Add(5);
+anExampleIntList.Add(7);
+
+int testInteger = anExampleIntList[0];
+
+int searchExample1 = anExampleIntList.IndexOf(6);
+int searchExample2 = anExampleIntList.IndexOf(7);
+anExampleIntList.Clear();
+```
+
+Lists have several useful functions:
+
+* `Add(x)` appends item `x` to the end of the list.
+* `Insert(n,x)` inserts `x` into the list such that it is the `n`th item.
+* `RemoveAt(n)` remove the `n`th item in the list.
+* `[n]` accesses the `n`th item in the list, for reading or writing.
+* `Count()` returns the number of items in the list.
+* `Contains(x)` returns whether or not the list contains the given item.
+* `IndexOf(x)` returns the first index wihere the item `n` appears, or `-1` if it does not.
+* `Clear()` empties the list out.
+
+## Returning Values
+
+Some scripts expect a value to be returned.  This is done with a `return` statement.
+
+```C#
+extern int trialCount;
+extern int runCount;
+
+if (trialCount < 10)
+{
+    return true;
+}
+
+return runCount++ < 3;
+```
+
+When any script hits a `return` statement, it stops execution.

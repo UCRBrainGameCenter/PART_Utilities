@@ -164,20 +164,20 @@ PART Script has many common mathematical operators, which work on Doubles and In
 * Exponentiation: `^`
 * Modulo: `%`
 
-Some further functions were included to round out the list.  Functions are invoked by writing the function name, then surrounding the argument(s) with parantheses.  As of yet, you cannot define your own functions.
+Some further operations were included as static Math functions to round out the list.  Functions are invoked by writing the function name, then surrounding the argument(s) with parantheses.  As of yet, you cannot define your own functions.
 
-* Natural Logarithm: `Ln(x)`
-* Base-10 Logarithm: `Log10(x)`
-* Round: `Round(x)`
-* Floor: `Floor(x)`
-* Ceiling: `Ceiling(x)`
-* IsNaN: `IsNaN(x)`
+* Natural Logarithm: `Math.Ln(x)`
+* Base-10 Logarithm: `Math.Log10(x)`
+* Round: `Math.Round(x)`
+* Floor: `Math.Floor(x)`
+* Ceiling: `Math.Ceiling(x)`
+* IsNaN: `Math.IsNaN(x)`
 
 Additionally, a few more functions simplify some statements.
 
-* Max: `Max(x,y)`
-* Min: `Min(x,y)`
-* Clamp: `Clamp(value,min,max)`
+* Max: `Math.Max(x,y)`
+* Min: `Math.Min(x,y)`
+* Clamp: `Math.Clamp(value,min,max)`
 
 There are also a few inplace operators.  These require a variable, but can make some common statements simpler.
 
@@ -254,28 +254,11 @@ Break ends the loop immediately.  In the above case, even though the Condition w
 
 Continue ends the current pass of the loop, jumping straight to the Incrementer step and continuing onward.
 
-## Persistent Data
+## Data Containers
 
-There exist a few functions to allow you to store persistent data for a user.  For the functions used to retrieve data, `key` refers to the string that the values are stored under, and the functions return a value of the named type.
+There are several data containers, each made to suit different needs
 
-* `GetInt(key)`
-* `GetDouble(key)`
-* `GetBool(key)`
-* `GetString(key)`
-
-And the functions used to set the data are as follows
-
-* `SetInt(key,value)`
-* `SetDouble(key,value)`
-* `SetBool(key,value)`
-* `SetString(key,value)`
-
-And the following help with management and cleanup
-
-* `HasData(key)`
-* `ClearData(key)`
-
-## Lists
+### Lists
 
 A List is a flexible collection of data.  You declare a list much like other data types, expect you specify what type of data it holds inside angle brackets, and construct one with `new`, like this:
 
@@ -292,16 +275,102 @@ int searchExample2 = anExampleIntList.IndexOf(7);
 anExampleIntList.Clear();
 ```
 
-Lists have several useful functions:
+Lists have several useful methods and properties:
 
+* `Count` returns the number of items in the list.
 * `Add(x)` appends item `x` to the end of the list.
 * `Insert(n,x)` inserts `x` into the list such that it is the `n`th item.
 * `RemoveAt(n)` remove the `n`th item in the list.
 * `[n]` accesses the `n`th item in the list, for reading or writing.
-* `Count()` returns the number of items in the list.
 * `Contains(x)` returns whether or not the list contains the given item.
 * `IndexOf(x)` returns the first index wihere the item `n` appears, or `-1` if it does not.
 * `Clear()` empties the list out.
+
+### Queues
+
+A Queue is a lot like a list, but it lacks random access to the elements.  Instead, you are expected just to `Enqueue` and `Dequeue` items.  The first item `Enqueue`d is the the first one `Dequeue`d, in what's called FIFO, or "First In, First Out".  In this way, it acts like a real-life Queue:
+
+```C#
+Queue<int> anExampleIntQueue = new Queue<int>();
+anExampleIntQueue.Enqueue(1);
+anExampleIntQueue.Enqueue(5);
+anExampleIntQueue.Enqueue(7);
+
+//testInteger will be set to 1
+int testInteger = anExampleIntQueue.Dequeue();
+
+anExampleIntQueue.Clear();
+```
+
+Queues have several useful functions:
+
+* `Count` returns the number of items in the queue.
+* `Enqueue(x)` appends item `x` to the end of the queue.
+* `Dequeue()` returns the item at the front of the queue, and removes it from the queue.
+* `Peek()` returns the item at the front of the queue, but leaves it in the queue.
+* `Contains(x)` returns whether or not the queue contains the given item.
+* `Clear()` empties the queue out.
+
+### Stacks
+
+A Stack is like an inverted Queue.  Instead, you `Push` and `Pop` items.  The most recent item to be `Push`ed is the the next one `Pop`ed, in what's called LIFO, or "Last In, First Out".  In this way, it acts like a real-life stack of cards:
+
+```C#
+Stack<int> anExampleIntStack = new Stack<int>();
+anExampleIntStack.Push(1);
+anExampleIntStack.Push(5);
+anExampleIntStack.Push(7);
+
+//testInteger will be set to 7
+int testInteger = anExampleIntStack.Pop();
+
+anExampleIntStack.Clear();
+```
+
+Stacks have several useful functions:
+
+* `Count` returns the number of items in the stack.
+* `Push(x)` adds item `x` to the top of the stack.
+* `Pop()` returns the item at the top of the stack, and removes it from the stack.
+* `Peek()` returns the item at the top of the stack, but leaves it in the stack.
+* `Contains(x)` returns whether or not the stack contains the given item.
+* `Clear()` empties the stack out.
+
+### RingBuffers
+
+### DepletableLists
+
+### DepletableBags
+
+## Persistent User Data
+
+There exist a few static `User` functions to allow you to store persistent data for a user.  For the functions used to retrieve data, `key` refers to the string that the values are stored under, and the functions return a value of the named type.
+
+* `User.GetInt(key)`
+* `User.GetDouble(key)`
+* `User.GetBool(key)`
+* `User.GetString(key)`
+* `User.GetList<T>(key)`
+
+**Note:** For all of the above, you can optionally specify a default value you would like the function to return if the value doesn't exist.  In that case, you would call it like: `User.GetInt(key,defaultValue)`  
+**Note:** `User.GetList<T>(key)` requires that you specify the type of item stored in the list.  So, if you were retrieving a `List<int>` from the user data, you would write something like:
+
+```C#
+List<int> trialList = User.GetList<int>("Last Session Trial List");
+```
+
+And the functions used to set the data are as follows
+
+* `User.SetInt(key,value)`
+* `User.SetDouble(key,value)`
+* `User.SetBool(key,value)`
+* `User.SetString(key,value)`
+* `User.SetList(key,value)`
+
+And the following help with management and cleanup
+
+* `User.HasData(key)`
+* `User.ClearData(key)`
 
 ## Returning Values
 

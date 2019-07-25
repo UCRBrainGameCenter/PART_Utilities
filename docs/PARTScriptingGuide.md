@@ -282,9 +282,9 @@ Lists have several useful methods and properties:
 * `Insert(n,x)` inserts `x` into the list such that it is the `n`th item.
 * `RemoveAt(n)` remove the `n`th item in the list.
 * `[n]` accesses the `n`th item in the list, for reading or writing.
-* `Contains(x)` returns whether or not the list contains the given item.
-* `IndexOf(x)` returns the first index wihere the item `n` appears, or `-1` if it does not.
-* `Clear()` empties the list out.
+* `Contains(x)` returns whether or not the list contains item `x`.
+* `IndexOf(x)` returns the first index where the item `x` appears, or `-1` if it does not.
+* `Clear()` empties out the list.
 
 ### Queues
 
@@ -302,14 +302,14 @@ int testInteger = anExampleIntQueue.Dequeue();
 anExampleIntQueue.Clear();
 ```
 
-Queues have several useful functions:
+Queues have several useful methods and properties:
 
 * `Count` returns the number of items in the queue.
 * `Enqueue(x)` appends item `x` to the end of the queue.
 * `Dequeue()` returns the item at the front of the queue, and removes it from the queue.
 * `Peek()` returns the item at the front of the queue, but leaves it in the queue.
-* `Contains(x)` returns whether or not the queue contains the given item.
-* `Clear()` empties the queue out.
+* `Contains(x)` returns whether or not the queue contains item `x`.
+* `Clear()` empties out the queue.
 
 ### Stacks
 
@@ -327,18 +327,55 @@ int testInteger = anExampleIntStack.Pop();
 anExampleIntStack.Clear();
 ```
 
-Stacks have several useful functions:
+Stacks have several useful methods and properties:
 
 * `Count` returns the number of items in the stack.
 * `Push(x)` adds item `x` to the top of the stack.
 * `Pop()` returns the item at the top of the stack, and removes it from the stack.
 * `Peek()` returns the item at the top of the stack, but leaves it in the stack.
-* `Contains(x)` returns whether or not the stack contains the given item.
-* `Clear()` empties the stack out.
+* `Contains(x)` returns whether or not the stack contains item `x`.
+* `Clear()` empties out the stack.
 
-### RingBuffers
+### Ring Buffers
 
-### DepletableLists
+Ring buffers have several useful methods and properties:
+
+* `Count` returns the number of items currently in the ring buffer.
+* `Size` returns the total capacity of the ring buffer.
+* `Head` returns the item at the Head of the ring buffer, the one most recently added.
+* `Tail` returns the item at the Tail of the ring buffer, the oldest one added that still remains.
+* `[n]` accesses the `n`th item in the ring buffer, for reading or writing.
+* `Contains(x)` returns whether or not the ring buffer contains item `x`.
+* `CountElement(x)` returns the number of times `x` appears in the ring buffer.
+* `GetIndex(x)` returns the first index where the item `x` appears, or `-1` if it does not.
+* `Remove(x)` removes item `x` from the ring buffer if it exists, and returns whether or not the operation removed an item.
+* `RemoveAt(n)` removes item at index `n` from the ring buffer.
+* `Resize(n)` resizes the ringbuffer to have a total capacity of `n`.
+* `Add(x)` adds item `x` to the head of the ring buffer.
+* `Push(x)` adds item `x` to the head of the ring buffer.
+* `Pop()` returns the item at the head of the ring buffer, and removes it from the ring buffer.
+* `PopBack()` returns the item at the tail of the ring buffer, and removes it from the ring buffer.
+* `PeekHead()` returns the item at the head of the ring buffer, but leaves it in the ring buffer.
+* `PeekTail()` returns the item at the tail of the ring buffer, but leaves it in the ring buffer.
+* `Clear()` empties out the ring buffer.
+
+### DepletableLists and DepletableBags
+
+DepletableLists and DepletableBags have several useful methods and properties:
+
+* `Count` returns the number of active items currently in the container.
+* `TotalCount` returns the number of items (active and inactive) currently in the container.
+* `AutoRefill` returns (and sets) whether or not the container marks all items as active when all items are depleted and a draw is attempted.
+* `Contains(x)` returns whether or not the container contains item `x`.
+* `Add(x)` adds item `x` to the end of the container, as active.
+* `Remove(x)` removes item `x` from the container if it exists, and returns whether or not the operation removed an item.
+* `DepleteValue(x)` depletes the first active instance of item `x` in the container if it exists, and returns whether or not the operation depleted an item.
+* `DepleteAllValue(x)` depletes the all active instances of item `x` in the container if any exist, and returns whether or not the operation depleted any items.
+* `RefreshValue(x)` sets as active the first depleted instance of item `x` in the container if it exists, and returns whether or not the operation set an item active.
+* `RefreshAllValue(x)` sets as active all depleted instances of item `x` in the container if any exist, and returns whether or not the operation set any items active.
+* `PopNext()` returns the next active item in the container, and marks it depleted.
+* `Reset()` marks all items as active.
+* `Clear()` empties out the container.
 
 ### DepletableBags
 

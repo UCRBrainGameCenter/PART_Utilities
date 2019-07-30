@@ -52,7 +52,7 @@ In PART Script, statements end with semicolons.  This is how the program knows t
 
 ```C#
 double exampleDuration = 10.0; //in milliseconds
-int particularlyLongExample = Floor(3.14159 * 2.0 *
+int particularlyLongExample = Math.Floor(3.14159 * 2.0 *
     0.001 * exampleDuration);
 ```
 

@@ -1,36 +1,37 @@
-# PART Scripting Guide
+# [PART Scripting Guide](#part-scripting-guide)
+
+*Date: July 30, 2019*
 
 The scripting language used in PART has been modeled closely after the basic syntax of C# (based in turn on C/C++), though it has been adapted to fit PART better.
 
-## Contents
+## [Contents](#contents)
 
 * [Data Types](#data-types)
 * [Comments](#comments)
 * [Semicolons](#semicolons)
 * [Declarations and Assignments](#declarations-and-assignments)
 * [Scope and Blocks](#scope-and-blocks)
-* [Global and Extern](#global-and-extern)
+* [`global` and `extern`](#global-and-extern)
   * [Assignment in Global Declarations](#assignment-in-global-declarations)
-* [Operators and If Statements](#operators-and-if-statements)
+* [Operators and `if` Statements](#operators-and-if-statements)
 * [Math Operators and Functions](#math-operators-and-functions)
 * [Loops](#loops)
-  * [For Loops](#for-loops)
-  * [While Loops](#while-loops)
-  * [ForEach Loops](#foreach-loops)
+  * [`for` Loops](#for-loops)
+  * [`while` Loops](#while-loops)
+  * [`foreach` Loops](#foreach-loops)
 * [Data Containers](#data-containers)
-  * [Lists](#lists)
-  * [Queues](#queues)
-  * [Stacks](#stacks)
-  * [Ring Buffers](#ring-buffers)
-  * [DepletableLists](#depletablelists)
-  * [DepletableBags](#depletablebags)
+  * [`List<T>`](#listt)
+  * [`Queue<T>`](#queuet)
+  * [`Stack<T>`](#stackt)
+  * [`RingBuffer<T>`](#ringbuffert)
+  * [`DepletableList<T>`](#depletablelistt)
+  * [`DepletableBag<T>`](#depletablebagt)
   * [Other Container Features](#other-container-features)
 * [Random](#random)
 * [Presistent User Data](#persistent-user-data)
 * [Returning Values](#returning-values)
 
-
-## Data Types
+## [Data Types](#data-types)
 
 There are four basic datatypes currently implemented in PART scripts.  These are Integers, Doubles, Strings, and Booleans.
 
@@ -42,11 +43,11 @@ There are four basic datatypes currently implemented in PART scripts.  These are
 
 **Strings**, or `string` in declarations, represent text.  In PART scripts, text is written surrounded by double quotation marks, like this:  `"This is a string"`.  There are a few ways to write special characters as well.  The character `\` is known as an Escape character, because it lets you enter special characters (based on the one that follows it).  If you need to include a double-quote character in the text, you do so by escaping it like this: `"Then he said, \"I don't believe it.\""`  Similarly, new lines can be inserted with `\n\r`, and if you want a backslash in the text, then simply use `\\`.
 
-## Comments
+## [Comments](#comments)
 
 Comments are helpful statements written in a block of code to help readers understand what you're doing.  They are completely ignored by the program.  Comments are either written with a double slash `//` or with the block style `/* Comment goes in between */`.  When you use the double slash, the comment automatically ends at the end of the current line.  The block style starts at the `/*` continues until it reaches the `*/` marker.
 
-## Semicolons
+## [Semicolons](#semicolons)
 
 In PART Script, statements end with semicolons.  This is how the program knows the statement has finished.  With the semicolon omitted, you can continue a particularly long expression on the following line.
 
@@ -56,7 +57,7 @@ int particularlyLongExample = Math.Floor(3.14159 * 2.0 *
     0.001 * exampleDuration);
 ```
 
-## Declarations And Assignments
+## [Declarations and Assignments](#declarations-and-assignments)
 
 Broadly speaking, you need variables to do anything meaninful in a PART script.  The simplest type of variable is a *local* one, which, as the name suggests, just lives in the script and ceases to exist whenever it is not running.  Local variables can be declared and assigned like this:
 
@@ -77,7 +78,7 @@ bool anExampleBoolean = false;
 
 If you don't assign it a value, as with `firstIntegerVariable`, then it defaults to 0.
 
-## Scope and Blocks
+## [Scope and Blocks](#scope-and-blocks)
 
 Scope is an important concept in Programming, and it's no different in PART Scripts.  When a local variable is declared, it is only available to the current Block and every Block inside of it.  Declaring a local variable at the top of a script object makes it available to the entire script, but to nothing outside.
 
@@ -95,7 +96,7 @@ int localInt;
 localInt = smallerScopeInt  //NO, BAD
 ```
 
-## Global and Extern
+## [`global` and `extern`](#global-and-extern)
 
 Local variables are great, but if you can't do anything with them and they only have the values you give them, then they'll hardly be helpful.  That is where Global and Extern come into play.  When a global variable is declared, it and its value are declared for the whole running battery.  Other scripts can access globals by declaring them as well.  Similarly, when a task makes use of a variable for one of its parameters, or when a task saves one of its outputs to a variable, these live in the same pool of memory as the globals.  This is how scripts and tasks can talk to one another.
 
@@ -116,7 +117,7 @@ extern int testInteger2;
 
 If you do not declare a variable as `global` or `extern` in a script, you cannot use it, even if it exists.  This helps protect script writers against accidentally using a global when they didn't intend to, or confusing situations where it's unclear what variable or value is being used.  Thus *Script 2* above would not be able to use `testInteger3` without declaring it with either `extern` or `global`.
 
-### Assignment in Global Declarations
+### [Assignment in Global Declarations](#assignment-in-global-declarations)
 
 It is very important to note that assignment in a global declaration (see `testInteger2` in *Script 1* above) only runs if the global was not already defined.  This behavior may be somewhat confusing, but it makes a lot of code a lot easier to write.
 
@@ -131,7 +132,7 @@ testInteger2 = 0;
 
 The reason for this is that globals are generally used to make information more persistent, so without this behavior, code would have to be absolutely filled with tests of whether a global variable exists, prior to its declaration, in order to capture desired behaviors.
 
-## Operators and If Statements
+## [Operators and `if` Statements](#operators-and-if-statements)
 
 Anyone who has done any programming is familiar with the concept of an If statement.  If some condition is true, the following block of code runs.  It is highly encouraged to always use Curly Braces for each block of an if statement, but you do not have to.
 
@@ -181,7 +182,7 @@ else
 //The final value of finalValue is 3.
 ```
 
-## Math Operators and Functions
+## [Math Operators and Functions](#math-operators-and-functions)
 
 PART Script has many common mathematical operators, which work on Doubles and Integers.
 
@@ -224,11 +225,11 @@ There are also a few inplace operators.  These require a variable, but can make 
 
 Writing `x++` is effectively the same as `x = x + 1`, or `x += 1`.
 
-## Loops
+## [Loops](#loops)
 
 Both **For** and **While** loops see a lot of use in programming, and here they are implemented in the C# Style.
 
-### While Loops
+### [`while` Loops](#while-loops)
 
 While loops are the simpler case.  They consist of a Condition, an a body.  Let's begin with an example to dissect
 
@@ -247,7 +248,7 @@ The statement following the loop, a block in this case, is the loop's Body and t
 
 When this loop terminates, testInteger will have a value of 30.
 
-### For Loops
+### [`for` Loops](#for-loops)
 
 Let's begin with an example to dissect
 
@@ -282,7 +283,7 @@ Break ends the loop immediately.  In the above case, even though the Condition w
 
 Continue ends the current pass of the loop, jumping straight to the Incrementer step and continuing onward.
 
-### ForEach Loops
+### [`foreach` Loops](#foreach-loops)
 
 Let's begin with an example to dissect
 
@@ -312,11 +313,11 @@ Break ends the loop immediately.
 
 Continue ends the current pass of the loop, jumping straight to the next value of the collection.
 
-## Data Containers
+## [Data Containers](#data-containers)
 
 There are several data containers, each made to suit different needs
 
-### Lists
+### [`List<T>`](#listt)
 
 A List is a flexible collection of data.  You declare a list much like other data types, expect you specify what type of data it holds inside angle brackets, and construct one with `new`, like this:
 
@@ -356,7 +357,7 @@ anExampleIntList.Clear();
 * `int IndexOf(x)` returns the first index where the item `x` appears, or `-1` if it does not.
 * `void Clear()` empties out the list.
 
-### Queues
+### [`Queue<T>`](#queuet)
 
 A Queue is a lot like a list, but it lacks random access to the elements.  Instead, you are expected just to `Enqueue` and `Dequeue` items.  The first item `Enqueue`d is the the first one `Dequeue`d, in what's called FIFO, or "First In, First Out".  In this way, it acts like a real-life Queue:
 
@@ -390,7 +391,7 @@ anExampleIntQueue.Clear();
 * `bool Contains(x)` returns whether or not the queue contains item `x`.
 * `void Clear()` empties out the queue.
 
-### Stacks
+### [`Stack<T>`](#stackt)
 
 A Stack is like an inverted Queue.  Instead, you `Push` and `Pop` items.  The most recent item to be `Push`ed is the the next one `Pop`ed, in what's called LIFO, or "Last In, First Out".  In this way, it acts like a real-life stack of cards:
 
@@ -424,7 +425,7 @@ anExampleIntStack.Clear();
 * `bool Contains(x)` returns whether or not the stack contains item `x`.
 * `void Clear()` empties out the stack.
 
-### Ring Buffers
+### [`RingBuffer<T>`](#ringbuffert)
 
 RingBuffers have a limited capacity.  Adding items past this capacity bumps the oldest value out of the list.
 
@@ -461,7 +462,7 @@ RingBuffers have a limited capacity.  Adding items past this capacity bumps the 
 * `T PeekTail()` returns the item at the tail of the ring buffer, but leaves it in the ring buffer.
 * `void Clear()` empties out the ring buffer.
 
-### DepletableLists
+### [`DepletableList<T>`](#depletablelistt)
 
 DepletableLists are like Queues that get filled with elements, but non-destructively Dequeued via `PopNext()`.  Using `PopNext()`, each element is returned in sequence, until `Reset()` is called (or the list is depleted *and* `AutoRefill` is set to `true`), where the DepletableList resets to its fully populated state.
 
@@ -490,7 +491,7 @@ DepletableLists are like Queues that get filled with elements, but non-destructi
 * `void Reset()` marks all items as active.
 * `void Clear()` empties out the container.
 
-### DepletableBags
+### [`DepletableBag<T>`](#depletablebagt)
 
 DepletableBags are like DepleteableLists, but are sampled randomly with calls to `PopNext()`.  Using `PopNext()`, elements are returned in a random sequence, until `Reset()` is called (or the list is depleted *and* `AutoRefill` is set to `true`), where the DepletableBag resets to its fully populated state.  This is ideal for counterbalancing, or *Sampling Without Replacement*.
 
@@ -521,7 +522,7 @@ DepletableBags are like DepleteableLists, but are sampled randomly with calls to
 * `void Reset()` marks all items as active.
 * `void Clear()` empties out the container.
 
-### Other Container Features
+### [Other Container Features)(#other-container-features)
 
 All of the containers are IEnumerable, so they can be used in the construction of one another.  Additionally, they all support the Collection Initializer Syntax.  Creating a collection with an initializer list calls the apporpriate `Add` method (`Add`, `Enqueue`, or `Push`) on each item in the list (see the following example).
 
@@ -543,7 +544,7 @@ Stack<int> exampleStackC = new Stack<int>() {1, 2, 3, 4, 5, 6};
 //Now exampleStackA is empty and exampleStackB and exampleStackC contain numbers 1 through 6
 ```
 
-## Random
+## [`Random`](#random)
 
 `Random` is a class that allows you to generate random numbers.  If you specify a seed, then the sequence of numbers generated will be completely reproducible (by using the same seed in the future).  If you do not specify a seed, then the sequence of numbers will be unique every time.
 
@@ -559,7 +560,7 @@ Stack<int> exampleStackC = new Stack<int>() {1, 2, 3, 4, 5, 6};
 * `int Next(int minValue, int maxValue)` returns a random integer between `minValue` (Inclusive) and `maxValue` (Exclusive).
 * `double NextDouble()` returns a random double between 0.0 and 1.0.
 
-## Persistent User Data
+## [Persistent User Data](#persistent-user-data)
 
 There exist a few static `User` functions to allow you to store persistent data for a user.  For the functions used to retrieve data, `key` refers to the string that the values are stored under, and the functions return a value of the named type.
 
@@ -589,7 +590,7 @@ And the following help with management and cleanup
 * `bool User.HasData(key)`
 * `void User.ClearData(key)`
 
-## Returning Values
+## [Returning Values](#returning-values)
 
 Some scripts expect a value to be returned.  This is done with a `return` statement.
 

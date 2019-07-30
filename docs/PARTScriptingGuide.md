@@ -103,7 +103,7 @@ testInteger2 = 0;
 
 The reason for this is that globals are generally used to make information more persistent, so without this behavior, code would have to be absolutely filled with tests of whether a global variable exists, prior to its declaration, in order to capture desired behaviors.
 
-## If and Operators
+## Operators and If Statements
 
 Anyone who has done any programming is familiar with the concept of an If statement.  If some condition is true, the following block of code runs.  It is highly encouraged to always use Curly Braces for each block of an if statement, but you do not have to.
 
@@ -254,6 +254,36 @@ Break ends the loop immediately.  In the above case, even though the Condition w
 
 Continue ends the current pass of the loop, jumping straight to the Incrementer step and continuing onward.
 
+### ForEach Loops
+
+Let's begin with an example to dissect
+
+```C#
+List<int> testIntegers = new List<int>() {1, 1, 1, 1, 1, 10, 1};
+
+int total = 0;
+foreach (int testInt in testIntegers)
+{
+    if (testInt == 10)
+    {
+        continue;
+    }
+    total += testInt;
+}
+
+//total equals 6
+```
+
+The foreach loop contains a single statement.  This statement begins with a declaration of a new variable to be used inside the loop, like `int testInt`, the keyword `in`, and then a container of some kind.
+
+The statement following the loop, a block in this case, is the loop's Body and that's what is executed on each loop.
+
+Additionally, there are special `break` and `continue` keywords.
+
+Break ends the loop immediately.
+
+Continue ends the current pass of the loop, jumping straight to the next value of the collection.
+
 ## Data Containers
 
 There are several data containers, each made to suit different needs
@@ -275,16 +305,28 @@ int searchExample2 = anExampleIntList.IndexOf(7);
 anExampleIntList.Clear();
 ```
 
-Lists have several useful methods and properties:
+`List<T>` Constructors:
 
-* `Count` returns the number of items in the list.
-* `Add(x)` appends item `x` to the end of the list.
-* `Insert(n,x)` inserts `x` into the list such that it is the `n`th item.
-* `RemoveAt(n)` remove the `n`th item in the list.
-* `[n]` accesses the `n`th item in the list, for reading or writing.
-* `Contains(x)` returns whether or not the list contains item `x`.
-* `IndexOf(x)` returns the first index where the item `x` appears, or `-1` if it does not.
-* `Clear()` empties out the list.
+* `List<T>()` Constructs an empty list.
+* `List<T>(IEnumerable<T> collection)` constructs a list populated with the elements in `collection`.
+* `List<T>(int initialCapacity)` constructs a list with initial capacity of `initialCapacity`.  Note, this does not prevent the list from going larger, just allocates additional space.
+
+`List<T>` Properties:
+
+* `int Count` returns the number of items in the list.
+
+`List<T>` Indexer:
+
+* `T [n]` accesses the `n`th item in the list, for reading or writing.
+
+`List<T>` Methods:
+
+* `void Add(x)` appends item `x` to the end of the list.
+* `void Insert(n,x)` inserts `x` into the list such that it is the `n`th item.
+* `void RemoveAt(n)` remove the `n`th item in the list.
+* `bool Contains(x)` returns whether or not the list contains item `x`.
+* `int IndexOf(x)` returns the first index where the item `x` appears, or `-1` if it does not.
+* `void Clear()` empties out the list.
 
 ### Queues
 
@@ -302,14 +344,23 @@ int testInteger = anExampleIntQueue.Dequeue();
 anExampleIntQueue.Clear();
 ```
 
-Queues have several useful methods and properties:
+`Queue<T>` Constructors:
 
-* `Count` returns the number of items in the queue.
-* `Enqueue(x)` appends item `x` to the end of the queue.
-* `Dequeue()` returns the item at the front of the queue, and removes it from the queue.
-* `Peek()` returns the item at the front of the queue, but leaves it in the queue.
-* `Contains(x)` returns whether or not the queue contains item `x`.
-* `Clear()` empties out the queue.
+* `Queue<T>()` constructs an empty queue.
+* `Queue<T>(IEnumerable<T> collection)` constructs a queue populated with the elements in `collection`.
+* `Queue<T>(int initialCapacity)` constructs a queue with initial capacity of `initialCapacity`.  Note, this does not prevent the queue from going larger, just allocates additional space.
+
+`Queue<T>` Properties:
+
+* `int Count` returns the number of items in the queue.
+
+`Queue<T>` Methods:
+
+* `void Enqueue(x)` appends item `x` to the end of the queue.
+* `T Dequeue()` returns the item at the front of the queue, and removes it from the queue.
+* `T Peek()` returns the item at the front of the queue, but leaves it in the queue.
+* `bool Contains(x)` returns whether or not the queue contains item `x`.
+* `void Clear()` empties out the queue.
 
 ### Stacks
 
@@ -327,67 +378,168 @@ int testInteger = anExampleIntStack.Pop();
 anExampleIntStack.Clear();
 ```
 
-Stacks have several useful methods and properties:
+`Stack<T>` Constructors:
 
-* `Count` returns the number of items in the stack.
-* `Push(x)` adds item `x` to the top of the stack.
-* `Pop()` returns the item at the top of the stack, and removes it from the stack.
-* `Peek()` returns the item at the top of the stack, but leaves it in the stack.
-* `Contains(x)` returns whether or not the stack contains item `x`.
-* `Clear()` empties out the stack.
+* `Stack<T>()` constructs an empty stack.
+* `Stack<T>(IEnumerable<T> collection)` constructs a stack populated with the elements in `collection`.
+* `Stack<T>(int initialCapacity)` constructs a stack with initial capacity of `initialCapacity`.  Note, this does not prevent the stack from going larger, just allocates additional space.
+
+`Stack<T>` Properties:
+
+* `int Count` returns the number of items in the stack.
+
+`Stack<T>` Methods:
+
+* `void Push(x)` adds item `x` to the top of the stack.
+* `T Pop()` returns the item at the top of the stack, and removes it from the stack.
+* `T Peek()` returns the item at the top of the stack, but leaves it in the stack.
+* `bool Contains(x)` returns whether or not the stack contains item `x`.
+* `void Clear()` empties out the stack.
 
 ### Ring Buffers
 
-Ring buffers have several useful methods and properties:
+RingBuffers have a limited capacity.  Adding items past this capacity bumps the oldest value out of the list.
 
-* `Count` returns the number of items currently in the ring buffer.
-* `Size` returns the total capacity of the ring buffer.
-* `Head` returns the item at the Head of the ring buffer, the one most recently added.
-* `Tail` returns the item at the Tail of the ring buffer, the oldest one added that still remains.
-* `[n]` accesses the `n`th item in the ring buffer, for reading or writing.
-* `Contains(x)` returns whether or not the ring buffer contains item `x`.
-* `CountElement(x)` returns the number of times `x` appears in the ring buffer.
-* `GetIndex(x)` returns the first index where the item `x` appears, or `-1` if it does not.
-* `Remove(x)` removes item `x` from the ring buffer if it exists, and returns whether or not the operation removed an item.
-* `RemoveAt(n)` removes item at index `n` from the ring buffer.
-* `Resize(n)` resizes the ringbuffer to have a total capacity of `n`.
-* `Add(x)` adds item `x` to the head of the ring buffer.
-* `Push(x)` adds item `x` to the head of the ring buffer.
-* `Pop()` returns the item at the head of the ring buffer, and removes it from the ring buffer.
-* `PopBack()` returns the item at the tail of the ring buffer, and removes it from the ring buffer.
-* `PeekHead()` returns the item at the head of the ring buffer, but leaves it in the ring buffer.
-* `PeekTail()` returns the item at the tail of the ring buffer, but leaves it in the ring buffer.
-* `Clear()` empties out the ring buffer.
+`RingBuffer<T>` Constructor:
 
-### DepletableLists and DepletableBags
+* `RingBuffer<T>(int bufferSize)` constructs an empty RingBuffer with a capacity of `bufferSize`.
+* `RingBuffer<T>(IEnumerable<T> values)` constructs a RingBuffer filled with the elements of `values`, with a capacity equal to the number of elements in `values`.
+* `RingBuffer<T>(IEnumerable<T> values, int bufferSize)` constructs a RingBuffer filled with the elements of `values`, with a capacity of `bufferSize`.
 
-DepletableLists and DepletableBags have several useful methods and properties:
+`RingBuffer<T>` Properties:
 
-* `Count` returns the number of active items currently in the container.
-* `TotalCount` returns the number of items (active and inactive) currently in the container.
-* `AutoRefill` returns (and sets) whether or not the container marks all items as active when all items are depleted and a draw is attempted.
-* `Contains(x)` returns whether or not the container contains item `x`.
-* `Add(x)` adds item `x` to the end of the container, as active.
-* `Remove(x)` removes item `x` from the container if it exists, and returns whether or not the operation removed an item.
-* `DepleteValue(x)` depletes the first active instance of item `x` in the container if it exists, and returns whether or not the operation depleted an item.
-* `DepleteAllValue(x)` depletes the all active instances of item `x` in the container if any exist, and returns whether or not the operation depleted any items.
-* `RefreshValue(x)` sets as active the first depleted instance of item `x` in the container if it exists, and returns whether or not the operation set an item active.
-* `RefreshAllValue(x)` sets as active all depleted instances of item `x` in the container if any exist, and returns whether or not the operation set any items active.
-* `PopNext()` returns the next active item in the container, and marks it depleted.
-* `Reset()` marks all items as active.
-* `Clear()` empties out the container.
+* `int Count` returns the number of items currently in the ring buffer.
+* `int Size` returns the total capacity of the ring buffer.
+* `T Head` returns the item at the Head of the ring buffer, the one most recently added.
+* `T Tail` returns the item at the Tail of the ring buffer, the oldest one added that still remains.
+
+`RingBuffer<T>` Indexer:
+
+* `T [n]` accesses the `n`th item in the ring buffer, for reading or writing.
+
+`RingBuffer<T>` Methods:
+
+* `bool Contains(x)` returns whether or not the ring buffer contains item `x`.
+* `int CountElement(x)` returns the number of times `x` appears in the ring buffer.
+* `int GetIndex(x)` returns the first index where the item `x` appears, or `-1` if it does not.
+* `bool Remove(x)` removes item `x` from the ring buffer if it exists, and returns whether or not the operation removed an item.
+* `void RemoveAt(n)` removes item at index `n` from the ring buffer.
+* `void Resize(n)` resizes the ringbuffer to have a total capacity of `n`.
+* `void Add(x)` adds item `x` to the head of the ring buffer.
+* `void Push(x)` adds item `x` to the head of the ring buffer.
+* `T Pop()` returns the item at the head of the ring buffer, and removes it from the ring buffer.
+* `T PopBack()` returns the item at the tail of the ring buffer, and removes it from the ring buffer.
+* `T PeekHead()` returns the item at the head of the ring buffer, but leaves it in the ring buffer.
+* `T PeekTail()` returns the item at the tail of the ring buffer, but leaves it in the ring buffer.
+* `void Clear()` empties out the ring buffer.
+
+### DepletableLists
+
+DepletableLists are like Queues that get filled with elements, but non-destructively Dequeued via `PopNext()`.  Using `PopNext()`, each element is returned in sequence, until `Reset()` is called (or the list is depleted *and* `AutoRefill` is set to `true`), where the DepletableList resets to its fully populated state.
+
+`DepletableList<T>` Constructors:
+
+* `DepletableList<T>()` constructs an empty depleteable bag and AutoRefill set to false.
+* `DepletableList<T>(IEnumerable<T> values)` constructs a depleteable bag populated with the items in the list and with AutoRefill set to false.
+* `DepletableList<T>(IEnumerable<T> values, bool autoRefill)` constructs a depleteable bag populated with the items in the list and with AutoRefill set the specified value.
+
+`DepletableList<T>` Properties:
+
+* `int Count` returns the number of active items currently in the container.
+* `int TotalCount` returns the number of items (active and inactive) currently in the container.
+* `bool AutoRefill` returns (and sets) whether or not the container marks all items as active when all items are depleted and a draw is attempted.
+
+`DepletableList<T>` Methods:
+
+* `bool Contains(x)` returns whether or not the container contains item `x`.
+* `void Add(x)` adds item `x` to the end of the container, as active.
+* `bool Remove(x)` removes item `x` from the container if it exists, and returns whether or not the operation removed an item.
+* `bool DepleteValue(x)` depletes the first active instance of item `x` in the container if it exists, and returns whether or not the operation depleted an item.
+* `bool DepleteAllValue(x)` depletes the all active instances of item `x` in the container if any exist, and returns whether or not the operation depleted any items.
+* `bool RefreshValue(x)` sets as active the first depleted instance of item `x` in the container if it exists, and returns whether or not the operation set an item active.
+* `bool RefreshAllValue(x)` sets as active all depleted instances of item `x` in the container if any exist, and returns whether or not the operation set any items active.
+* `T PopNext()` returns the next active item in the container, and marks it depleted.
+* `void Reset()` marks all items as active.
+* `void Clear()` empties out the container.
 
 ### DepletableBags
+
+DepletableBags are like DepleteableLists, but are sampled randomly with calls to `PopNext()`.  Using `PopNext()`, elements are returned in a random sequence, until `Reset()` is called (or the list is depleted *and* `AutoRefill` is set to `true`), where the DepletableBag resets to its fully populated state.  This is ideal for counterbalancing, or *Sampling Without Replacement*.
+
+`DepletableBag<T>` Constructors:
+
+* `DepletableBag<T>()` constructs an empty depleteable bag with its own randomizer and AutoRefill set to false.
+* `DepletableBag<T>(Random randomizer)` constructs an empty depleteable bag that uses the specified Random object to control randomization and AutoRefill set to false.
+* `DepletableBag<T>(IEnumerable<T> values)` constructs a depleteable bag populated with the items in the list that uses its own randomizer and AutoRefill set to false.
+* `DepletableBag<T>(IEnumerable<T> values, bool autoRefill)` constructs a depleteable bag populated with the items in the list that uses its own randomizer and AutoRefill set the specified value.
+* `DepletableBag<T>(IEnumerable<T> values, bool autoRefill, Random randomizer)` constructs a depleteable bag populated with the items in the list that uses the specified Random object to control randomization and AutoRefill set the specified value.
+
+`DepletableBag<T>` Properties:
+
+* `int Count` returns the number of active items currently in the container.
+* `int TotalCount` returns the number of items (active and inactive) currently in the container.
+* `bool AutoRefill` returns (and sets) whether or not the container marks all items as active when all items are depleted and a draw is attempted.
+
+`DepletableBag<T>` Methods:
+
+* `bool Contains(x)` returns whether or not the container contains item `x`.
+* `void Add(x)` adds item `x` to the end of the container, as active.
+* `bool Remove(x)` removes item `x` from the container if it exists, and returns whether or not the operation removed an item.
+* `bool DepleteValue(x)` depletes the first active instance of item `x` in the container if it exists, and returns whether or not the operation depleted an item.
+* `bool DepleteAllValue(x)` depletes the all active instances of item `x` in the container if any exist, and returns whether or not the operation depleted any items.
+* `bool RefreshValue(x)` sets as active the first depleted instance of item `x` in the container if it exists, and returns whether or not the operation set an item active.
+* `bool RefreshAllValue(x)` sets as active all depleted instances of item `x` in the container if any exist, and returns whether or not the operation set any items active.
+* `T PopNext()` returns a random active item in the container, and marks it depleted.
+* `void Reset()` marks all items as active.
+* `void Clear()` empties out the container.
+
+## Other Container Features
+
+All of the containers are IEnumerable, so they can be used in the construction of one another.  Additionally, they all support the Collection Initializer Syntax.  Creating a collection with an initializer list calls the apporpriate `Add` method (`Add`, `Enqueue`, or `Push`) on each item in the list (see the following example).
+
+```C#
+int testInt = 5;
+List<int> exampleListA = new List<int>() { 1, 2, 3, 4, testInt, 6 };
+List<int> exampleListB = new List<int>(exampleListA);
+
+//exampleListA and exampleListB contain numbers 1 through 6
+
+exampleListA.Clear();
+
+//Now exampleListA is empty and exampleListB contains numbers 1 through 6
+
+Stack<int> exampleStackA = new Stack<int>(exampleListA);
+Stack<int> exampleStackB = new Stack<int>(exampleListB);
+Stack<int> exampleStackC = new Stack<int>() {1, 2, 3, 4, 5, 6};
+
+//Now exampleStackA is empty and exampleStackB and exampleStackC contain numbers 1 through 6
+```
+
+## Random
+
+`Random` is a class that allows you to generate random numbers.  If you specify a seed, then the sequence of numbers generated will be completely reproducible (by using the same seed in the future).  If you do not specify a seed, then the sequence of numbers will be unique every time.
+
+`Random` Constructors:
+
+* `Random()` constructs a new instance with a random seed.
+* `Random(int seed)` constructs a new instance with the specified seed.
+
+`Random` Methods:
+
+* `int Next()` returns a completely random integer between the max and min value for a signed 32-bit integer.
+* `int Next(int maxValue)` returns a random integer between 0 (Inclusive) and `maxValue` (Exclusive).
+* `int Next(int minValue, int maxValue)` returns a random integer between `minValue` (Inclusive) and `maxValue` (Exclusive).
+* `double NextDouble()` returns a random double between 0.0 and 1.0.
 
 ## Persistent User Data
 
 There exist a few static `User` functions to allow you to store persistent data for a user.  For the functions used to retrieve data, `key` refers to the string that the values are stored under, and the functions return a value of the named type.
 
-* `User.GetInt(key)`
-* `User.GetDouble(key)`
-* `User.GetBool(key)`
-* `User.GetString(key)`
-* `User.GetList<T>(key)`
+* `int User.GetInt(key)`
+* `double User.GetDouble(key)`
+* `bool User.GetBool(key)`
+* `string User.GetString(key)`
+* `List<T> User.GetList<T>(key)`
 
 **Note:** For all of the above, you can optionally specify a default value you would like the function to return if the value doesn't exist.  In that case, you would call it like: `User.GetInt(key,defaultValue)`  
 **Note:** `User.GetList<T>(key)` requires that you specify the type of item stored in the list.  So, if you were retrieving a `List<int>` from the user data, you would write something like:
@@ -398,16 +550,16 @@ List<int> trialList = User.GetList<int>("Last Session Trial List");
 
 And the functions used to set the data are as follows
 
-* `User.SetInt(key,value)`
-* `User.SetDouble(key,value)`
-* `User.SetBool(key,value)`
-* `User.SetString(key,value)`
-* `User.SetList(key,value)`
+* `void User.SetInt(key,value)`
+* `void User.SetDouble(key,value)`
+* `void User.SetBool(key,value)`
+* `void User.SetString(key,value)`
+* `void User.SetList(key,value)`
 
 And the following help with management and cleanup
 
-* `User.HasData(key)`
-* `User.ClearData(key)`
+* `bool User.HasData(key)`
+* `void User.ClearData(key)`
 
 ## Returning Values
 

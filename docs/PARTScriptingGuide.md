@@ -2,6 +2,34 @@
 
 The scripting language used in PART has been modeled closely after the basic syntax of C# (based in turn on C/C++), though it has been adapted to fit PART better.
 
+## Contents
+
+* [Data Types](#data-types)
+* [Comments](#comments)
+* [Semicolons](#semicolons)
+* [Declarations and Assignments](#declarations-and-assignments)
+* [Scope and Blocks](#scope-and-blocks)
+* [Global and Extern](#global-and-extern)
+  * [Assignment in Global Declarations](#assignment-in-global-declarations)
+* [Operators and If Statements](#operators-and-if-statements)
+* [Math Operators and Functions](#math-operators-and-functions)
+* [Loops](#loops)
+  * [For Loops](#for-loops)
+  * [While Loops](#while-loops)
+  * [ForEach Loops](#foreach-loops)
+* [Data Containers](#data-containers)
+  * [Lists](#lists)
+  * [Queues](#queues)
+  * [Stacks](#stacks)
+  * [Ring Buffers](#ring-buffers)
+  * [DepletableLists](#depletablelists)
+  * [DepletableBags](#depletablebags)
+  * [Other Container Features](#other-container-features)
+* [Random](#random)
+* [Presistent User Data](#persistent-user-data)
+* [Returning Values](#returning-values)
+
+
 ## Data Types
 
 There are four basic datatypes currently implemented in PART scripts.  These are Integers, Doubles, Strings, and Booleans.
@@ -493,7 +521,7 @@ DepletableBags are like DepleteableLists, but are sampled randomly with calls to
 * `void Reset()` marks all items as active.
 * `void Clear()` empties out the container.
 
-## Other Container Features
+### Other Container Features
 
 All of the containers are IEnumerable, so they can be used in the construction of one another.  Additionally, they all support the Collection Initializer Syntax.  Creating a collection with an initializer list calls the apporpriate `Add` method (`Add`, `Enqueue`, or `Push`) on each item in the list (see the following example).
 

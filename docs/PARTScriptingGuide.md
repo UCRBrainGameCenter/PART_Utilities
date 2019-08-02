@@ -14,7 +14,8 @@ The scripting language used in PART has been modeled closely after the basic syn
 * [`global` and `extern`](#global-and-extern)
   * [Assignment in Global Declarations](#assignment-in-global-declarations)
 * [Operators and `if` Statements](#operators-and-if-statements)
-* [Math Operators and Functions](#math-operators-and-functions)
+* [Math Operations](#math-operations)
+* [Functions](#functions)
 * [Loops](#loops)
   * [`for` Loops](#for-loops)
   * [`while` Loops](#while-loops)
@@ -26,6 +27,7 @@ The scripting language used in PART has been modeled closely after the basic syn
   * [`RingBuffer<T>`](#ringbuffert)
   * [`DepletableList<T>`](#depletablelistt)
   * [`DepletableBag<T>`](#depletablebagt)
+  * [`Dictionary<TKey,TValue>`](#dictionarytkeytvalue)
   * [Other Container Features](#other-container-features)
 * [Random](#random)
 * [Presistent User Data](#persistent-user-data)
@@ -182,7 +184,7 @@ else
 //The final value of finalValue is 3.
 ```
 
-## [Math Operators and Functions](#math-operators-and-functions)
+## [Math Operations](#math-operations)
 
 PART Script has many common mathematical operators, which work on Doubles and Integers.
 
@@ -224,6 +226,38 @@ There are also a few inplace operators.  These require a variable, but can make 
 * OrEquals: `variable |= x`
 
 Writing `x++` is effectively the same as `x = x + 1`, or `x += 1`.
+
+## [Functions](#functions)
+
+Functions are a convenient way to collect some common, reused, or complicated operations in a reusable place.  A function declaration always begins with a Type, is followed by a Name, then has its arguments listed, and is followed by the function body itself.  A function that doesn't return a value uses the type `void`.
+
+```C#
+int sharedInt;
+
+int Squared(int value)
+{
+    int valueSquared = value * value;
+    return valueSquared;
+}
+
+void ModifyInt(int diff)
+{
+    sharedInt = sharedInt + diff;
+}
+```
+
+PART Scripts support recursive functions as well, where a function can call itself.
+
+```C#
+//Get the index-th term of the Fibonacci sequence
+int FibonacciNumber(int index)
+{
+    if (index < 2)
+        return 1;
+
+    return FibonacciNumber(index - 1) + FibonacciNumber(index - 2);
+}
+```
 
 ## [Loops](#loops)
 
@@ -520,6 +554,32 @@ DepletableBags are like DepleteableLists, but are sampled randomly with calls to
 * `bool RefreshAllValue(x)` sets as active all depleted instances of item `x` in the container if any exist, and returns whether or not the operation set any items active.
 * `T PopNext()` returns a random active item in the container, and marks it depleted.
 * `void Reset()` marks all items as active.
+* `void Clear()` empties out the container.
+
+### [`Dictionary<TKey,TValue>`](#dictionarytkeytvalue)
+
+Dictionaries store values under keys of the specified type.  They are also sometimes known as HashTables.  You add elements with `Add`, but you need to specify both the value and the key.  You access elements with the indexer using the appropriate key.
+
+`Dictionary<TKey,TValue>` Constructors:
+
+* `Dictionary<TKey,TValue>()` constructs an empty dictionary.
+
+`Dictionary<TKey,TValue>` Properties:
+
+* `int Count` returns the number of values currently in the dictionary.
+* `IEnumerable<TKey> Keys` returns an enumeration of all of the Keys.
+* `IEnumerable<TValue> Values` returns an enumeration of all of the Values, in the same order as the Keys.
+
+`Dictionary<TKey,TValue>` Indexer:
+
+* `TValue [x]` accesses the value stored under key `x`, for reading or writing.
+
+`Dictionary<TKey,TValue>` Methods:
+
+* `bool ContainsKey(x)` returns whether or not the container contains an item stored under key `x`.
+* `bool ContainsValue(y)` returns whether or not the container contains an item `y`.
+* `void Add(x,y)` adds item `y` to the container under key `x`.
+* `bool Remove(x)` removes item stored under key `x` from the container if it exists, and returns whether or not the operation removed an item.
 * `void Clear()` empties out the container.
 
 ### [Other Container Features)(#other-container-features)

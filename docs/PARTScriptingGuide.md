@@ -28,6 +28,7 @@ The scripting language used in PART has been modeled closely after the basic syn
   * [`DepletableList<T>`](#depletablelistt)
   * [`DepletableBag<T>`](#depletablebagt)
   * [`Dictionary<TKey,TValue>`](#dictionarytkeytvalue)
+  * [`HashSet<T>`](#hashsett)
   * [Other Container Features](#other-container-features)
 * [Random](#random)
 * [Presistent User Data](#persistent-user-data)
@@ -581,6 +582,26 @@ Dictionaries store values under keys of the specified type.  They are also somet
 * `void Add(x,y)` adds item `y` to the container under key `x`.
 * `bool Remove(x)` removes item stored under key `x` from the container if it exists, and returns whether or not the operation removed an item.
 * `void Clear()` empties out the container.
+
+### [`HashSet<T>`](#hashsett)
+
+HashSets are unordered collections of values.  A value either is or is not in the set, but it is not built for accessing the values as much as it is for testing if a value exists in the set.
+
+`HashSet<T>` Constructors:
+
+* `HashSet<T>()` constructs an empty HashSet.
+* `HashSet<T>(IEnumerable<T> values)` constructs a HashSet filled with the unique elements of `values`.
+
+`HashSet<T>` Properties:
+
+* `int Count` returns the number of values currently in the HashSet.
+
+`HashSet<T>` Methods:
+
+* `bool Add(x)` adds item `x` to the HashSet if it was not already in the collection, and returns whether the addition was successful.
+* `bool Remove(x)` removes item `x` from the HashSet if it exists, and returns whether or not the operation removed an item.
+* `bool Contains(x)` returns whether or not the HashSet contains item `x`.
+* `void Clear()` empties out the HashSet.
 
 ### [Other Container Features)(#other-container-features)
 

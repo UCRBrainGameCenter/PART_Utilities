@@ -1,6 +1,6 @@
 # [PART Scripting Guide](#part-scripting-guide)
 
-*Date: August 5, 2019*
+*Date: August 8, 2019*
 
 The scripting language used in PART has been modeled closely after the basic syntax of C# (based in turn on C/C++), though it has been adapted to fit PART better.
 
@@ -56,7 +56,7 @@ In PART Script, statements end with semicolons.  This is how the program knows t
 
 ```C#
 double exampleDuration = 10.0; //in milliseconds
-int particularlyLongExample = Math.Floor(3.14159 * 2.0 *
+int particularlyLongExample = (int)Math.Floor(3.14159 * 2.0 *
     0.001 * exampleDuration);
 ```
 
@@ -130,7 +130,9 @@ global int testInteger1 = 0;
 
 //The following two lines gives us access to the global testInteger2, and then always sets it to 0.
 global int testInteger2;
-testInteger2 = 0;
+// ---Snip ---
+    testInteger2 = 0;
+// ---Snip ---
 ```
 
 The reason for this is that globals are generally used to make information more persistent, so without this behavior, code would have to be absolutely filled with tests of whether a global variable exists, prior to its declaration, in order to capture desired behaviors.
@@ -603,7 +605,7 @@ HashSets are unordered collections of values.  A value either is or is not in th
 * `bool Contains(x)` returns whether or not the HashSet contains item `x`.
 * `void Clear()` empties out the HashSet.
 
-### [Other Container Features)(#other-container-features)
+### [Other Container Features](#other-container-features)
 
 All of the containers are IEnumerable, so they can be used in the construction of one another.  Additionally, they all support the Collection Initializer Syntax.  Creating a collection with an initializer list calls the apporpriate `Add` method (`Add`, `Enqueue`, or `Push`) on each item in the list (see the following example).
 
@@ -673,18 +675,22 @@ And the following help with management and cleanup
 
 ## [Returning Values](#returning-values)
 
-Some scripts expect a value to be returned.  This is done with a `return` statement.
+Some functions return a value.  This is done with a `return` statement.
 
 ```C#
 extern int trialCount;
 extern int runCount;
 
-if (trialCount < 10)
+bool GetValue()
 {
-    return true;
+    if (trialCount < 10)
+    {
+        return true;
+    }
+
+    return runCount++ < 3;
 }
 
-return runCount++ < 3;
 ```
 
-When any script hits a `return` statement, it stops execution.
+When any functions hits a `return` statement, it stops execution.

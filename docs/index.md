@@ -2,20 +2,17 @@
 
 ## PARTial Programming Guides
 
-[PARTial Programming Guide Website](PARTial_Programming_Guide.md)
+[PARTial Programming Guide Website](PARTial_Programming_Guide.md) - [PDF](PARTial_Programming_Guide.pdf)
 
-[PARTial Programming Guide PDF](PARTial_Programming_Guide.pdf)
+[PART Scripting Guide Website](PARTScriptingGuide.md) - [PDF](PARTScriptingGuide.pdf)
 
-[PART Multiburst Rough Rough Guide](PART_Multiburst.md)
-
-[PART Multiburst Rough Rough Guide PDF](PART_Multiburst.pdf)
+[PART Multiburst Rough Rough Guide](PART_Multiburst.md) - [PDF](PART_Multiburst.pdf)
 
 [Custom PART Experiments](CustomExperiments.md)
 
 ## PARTpers (PART Papers)
 
-[Development and validation of Portable Automated Rapid Testing (PART) measures for
-auditory research](Papers/Gallun_et_al_2018_POMA_Development_of_PART.pdf)
+[Development and validation of Portable Automated Rapid Testing (PART) measures for auditory research](Papers/Gallun_et_al_2018_POMA_Development_of_PART.pdf)
 
 ## PARTsentations (PART Presentations)
 

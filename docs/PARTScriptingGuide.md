@@ -1,6 +1,6 @@
 # [PART Scripting Guide](#part-scripting-guide)
 
-*Date: August 8, 2019*
+*Date: January 31, 2020*
 
 The scripting language used in PART has been modeled closely after the basic syntax of C# (based in turn on C/C++), though it has been adapted to fit PART better.
 
@@ -16,6 +16,7 @@ The scripting language used in PART has been modeled closely after the basic syn
 * [Operators and `if` Statements](#operators-and-if-statements)
 * [Math Operations](#math-operations)
 * [Functions](#functions)
+* [Returning Values](#returning-values)
 * [Loops](#loops)
   * [`for` Loops](#for-loops)
   * [`while` Loops](#while-loops)
@@ -32,7 +33,7 @@ The scripting language used in PART has been modeled closely after the basic syn
   * [Other Container Features](#other-container-features)
 * [Random](#random)
 * [Presistent User Data](#persistent-user-data)
-* [Returning Values](#returning-values)
+* [Reports](#reports)
 
 ## [Data Types](#data-types)
 
@@ -261,6 +262,29 @@ int FibonacciNumber(int index)
     return FibonacciNumber(index - 1) + FibonacciNumber(index - 2);
 }
 ```
+
+## [Returning Values](#returning-values)
+
+Some functions return a value.  This is done with a `return` statement.
+
+```C#
+extern int trialCount;
+extern int runCount;
+
+bool GetValue()
+{
+    if (trialCount < 10)
+    {
+        return true;
+    }
+
+    return runCount++ < 3;
+}
+
+```
+
+When any functions hits a `return` statement, it stops execution.
+
 
 ## [Loops](#loops)
 
@@ -673,24 +697,19 @@ And the following help with management and cleanup
 * `bool User.HasData(key)`
 * `void User.ClearData(key)`
 
-## [Returning Values](#returning-values)
+## [Reports](#reports)
 
-Some functions return a value.  This is done with a `return` statement.
+Reports are meant to be a high-level summary of the performance of participants across different assessments.  To add any value to the report for the current battery, use the `User.AddToReport(header,value)` function.
+
+* `void User.AddToReport(header, value)` adds the string `value` to the report under string `header`
+
+An example common use case follows, where the `STMThreshold` is converted to a string *implicitly* by concatenating it with the `" db"` string.  To do so without applying any additional text, one could also just concatenate it with an empty string, like `STMThreshold + ""`.  This is necessary because the arguments to the function are `string`s.
 
 ```C#
-extern int trialCount;
-extern int runCount;
+extern double STMThreshold;
 
-bool GetValue()
+void Run()
 {
-    if (trialCount < 10)
-    {
-        return true;
-    }
-
-    return runCount++ < 3;
+    User.AddToReport("STM", STMThreshold + " dB");
 }
-
 ```
-
-When any functions hits a `return` statement, it stops execution.

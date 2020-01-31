@@ -14,6 +14,8 @@
 
 [Development and validation of Portable Automated Rapid Testing (PART) measures for auditory research](Papers/Gallun_et_al_2018_POMA_Development_of_PART.pdf)
 
+[Portable Automated Rapid Testing (PART) for auditory research: Validation in a normal hearing population](https://www.biorxiv.org/content/10.1101/2020.01.08.899088v1)
+
 ## Presentations
 
 [Describing, diagnosing, and treating auditory processing abilities and disabilities in adults](Presentations/Gallun_ASHA_2018_Short_Course.pdf)

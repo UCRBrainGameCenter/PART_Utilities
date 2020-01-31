@@ -1,6 +1,6 @@
 # PART Utilities Home
 
-## PARTial Programming Guides
+## Guides
 
 [PARTial Programming Guide Website](PARTial_Programming_Guide.md) - [PDF](PARTial_Programming_Guide.pdf)
 
@@ -10,15 +10,15 @@
 
 [Custom PART Experiments](CustomExperiments.md)
 
-## PARTpers (PART Papers)
+## Papers
 
 [Development and validation of Portable Automated Rapid Testing (PART) measures for auditory research](Papers/Gallun_et_al_2018_POMA_Development_of_PART.pdf)
 
-## PARTsentations (PART Presentations)
+## Presentations
 
 [Describing, diagnosing, and treating auditory processing abilities and disabilities in adults](Presentations/Gallun_ASHA_2018_Short_Course.pdf)
 
-## PARTsters (PART Posters)
+## Posters
 
 [Portable Automated Rapid Testing (PART) Measures for Auditory Research](Posters/ASA_2018_Minneapolis_PARTners_Final_May_2018.pdf)
 

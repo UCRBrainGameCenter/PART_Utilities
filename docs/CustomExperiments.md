@@ -1,5 +1,7 @@
 # Custom Experiments
 
+**Note, this list is currently outdated, and for an older release of PART**
+
 Here is a list of the custom assessments and batteries that are being maintained by the PART group.
 
 ## Custom Assessments

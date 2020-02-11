@@ -1,5 +1,15 @@
 # PART Utilities Home
 
+## Links
+
+PART can be acquired on several platforms:
+
+[Apple App Store](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)
+
+[Microsoft Store](https://www.microsoft.com/store/productId/9N5C67G35FT4)
+
+[Windows Direct Download (x64)](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.3.0_x64.appx)
+
 ## Guides
 
 [PARTial Programming Guide Website](PARTial_Programming_Guide.md) - [PDF](PARTial_Programming_Guide.pdf)

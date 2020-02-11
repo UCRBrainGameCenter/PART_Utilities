@@ -8,7 +8,7 @@ PART can be acquired on several platforms:
 
 [Microsoft Store](https://www.microsoft.com/store/productId/9N5C67G35FT4)
 
-[Windows Direct Download (x64)](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.3.0_x64.appx)
+[Windows Standalone (x64)](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.3_WINx64.zip)
 
 ## Guides
 

@@ -5,9 +5,11 @@
 **Current Version**: 2.2.4  
 **Updated**: 02/21/20
 
-[Apple App Store](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)
+[Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)
 
-[Microsoft Store](https://www.microsoft.com/store/productId/9N5C67G35FT4)
+[Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.part)
+
+[Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9N5C67G35FT4)
 
 [Windows Standalone (x64)](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.4_WINx64.zip)
 

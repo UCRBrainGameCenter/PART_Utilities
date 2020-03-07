@@ -1,6 +1,12 @@
 # PART Standalone Build Archive
 
-## 2.2.4 (Current Version)
+## 2.2.5 (Current Version)
+
+*Released: March 2020*
+
+[Windows (x64)](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.5_WINx64.zip)
+
+## 2.2.4
 
 *Released: February 2020*
 

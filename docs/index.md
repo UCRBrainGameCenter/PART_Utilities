@@ -2,6 +2,13 @@
 
 ## Download Links
 
+**Beta Build**: 2.3.0 
+**Updated**: 04/27/20
+
+[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_WINx64.zip)
+
+[BGC Science Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_WINx64.zip)
+
 **Current Version**: 2.2.6 
 **Updated**: 03/12/20
 

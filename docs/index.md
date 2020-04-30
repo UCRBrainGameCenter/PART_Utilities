@@ -2,14 +2,16 @@
 
 ## PART Builds
 
-**New Build**: 2.3.0 
+**New Build**: 2.3.0  
 **Updated**: 04/29/20
 
 [Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_WINx64.zip)
 
 [MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_MacOS.dmg)
 
-**Current Version**: 2.2.6 
+[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_Android.apk)
+
+**Current Version**: 2.2.6  
 **Updated**: 03/12/20
 
 [Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)
@@ -28,12 +30,14 @@
 
 ## BGC Science Builds
 
-**New Build**: 2.3.0 
+**New Build**: 2.3.0  
 **Updated**: 04/29/20
 
 [Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_WINx64.zip)
 
 [MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_MacOS.dmg)
+
+[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_Android.apk)
 
 ## Guides
 

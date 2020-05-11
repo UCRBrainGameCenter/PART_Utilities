@@ -1,6 +1,14 @@
 # PART Build Archive
 
-## 2.2.6 (Current Version)
+## 2.3.0 (Current Version)
+
+*Released: April 30th, 2020*
+
+[Windows](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_WINx64.zip)  
+[MacOS](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_MacOS.dmg)  
+[Android](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_Android.apk)  
+
+## 2.2.6
 
 *Released: March 12th, 2020*
 

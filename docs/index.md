@@ -2,17 +2,8 @@
 
 ## PART Builds
 
-**New Build**: 2.3.0  
+**Current Version**: 2.3.0  
 **Updated**: 04/29/20
-
-[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_WINx64.zip)
-
-[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_MacOS.dmg)
-
-[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_Android.apk)
-
-**Current Version**: 2.2.6  
-**Updated**: 03/12/20
 
 [Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)
 
@@ -20,24 +11,32 @@
 
 [Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9N5C67G35FT4)
 
-[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.6_WINx64.zip)
+[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_WINx64.zip)
 
-[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.6_MacOS.dmg)
+[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_MacOS.dmg)
 
-[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.2.6_Android.apk)
+[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_Android.apk)
 
-[Build Archive](StandaloneArchive.md)
+[PART Build Archive](PARTBuildArchive.md)
 
 ## BGC Science Builds
 
-**New Build**: 2.3.0  
+**Current Version**: 2.3.0  
 **Updated**: 04/29/20
+
+[Apple App Store (iOS)](https://apps.apple.com/us/app/bgc-science/id1508696910?platform=ipad)
+
+[Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.bgcscience)
+
+[Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9MZZ0KKG7W93)
 
 [Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_WINx64.zip)
 
 [MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_MacOS.dmg)
 
 [Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_Android.apk)
+
+[BGC Science Build Archive](BGCScienceBuildArchive.md)
 
 ## Guides
 
@@ -46,8 +45,6 @@
 [PART Scripting Guide Website](PARTScriptingGuide.md) - [PDF](PARTScriptingGuide.pdf)
 
 [PART Multiburst Rough Rough Guide](PART_Multiburst.md) - [PDF](PART_Multiburst.pdf)
-
-[Custom PART Experiments](CustomExperiments.md)
 
 ## Papers
 

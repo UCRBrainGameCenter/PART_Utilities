@@ -2,39 +2,29 @@
 
 ## PART Builds
 
-**Current Version**: 2.3.0  
-**Updated**: 04/29/20
+**Current Version**: 2.3.1  
+**Updated**: 05/12/20
 
-[Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)
-
-[Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.part)
-
-[Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9N5C67G35FT4)
-
-[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_WINx64.zip)
-
-[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_MacOS.dmg)
-
-[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.0_Android.apk)
+[Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)  
+[Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.part)  
+[Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9N5C67G35FT4)  
+[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.1_WINx64.zip)  
+[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.1_MacOS.dmg)  
+[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/PART_2.3.1_Android.apk)
 
 [PART Build Archive](PARTBuildArchive.md)
 
 ## BGC Science Builds
 
-**Current Version**: 2.3.0  
-**Updated**: 04/29/20
+**Current Version**: 2.3.1  
+**Updated**: 05/12/20
 
-[Apple App Store (iOS)](https://apps.apple.com/us/app/bgc-science/id1508696910?platform=ipad)
-
-[Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.bgcscience)
-
-[Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9MZZ0KKG7W93)
-
-[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_WINx64.zip)
-
-[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_MacOS.dmg)
-
-[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.0_Android.apk)
+[Apple App Store (iOS)](https://apps.apple.com/us/app/bgc-science/id1508696910?platform=ipad)  
+[Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.bgcscience)  
+[Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9MZZ0KKG7W93)  
+[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.1_WINx64.zip)  
+[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.1_MacOS.dmg)  
+[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/BGCScience_2.3.1_Android.apk)
 
 [BGC Science Build Archive](BGCScienceBuildArchive.md)
 

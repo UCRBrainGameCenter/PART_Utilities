@@ -13,10 +13,10 @@ We'd also like to introduce **BGC Science**, an automated, subject-oriented vers
 [PARTial Programming Guide Website](PARTial_Programming_Guide.md) ([PDF](PARTial_Programming_Guide.pdf)) - 
 A guide that goes over the basics of designing an experiment in **PART**.
 
-[PART Scripting Guide Website](PARTScriptingGuide.md) - [PDF](PARTScriptingGuide.pdf) - 
+[PART Scripting Guide Website](PARTScriptingGuide.md) ([PDF](PARTScriptingGuide.pdf)) - 
 A guide that goes over the features of the optional scripting language that can be used to customize test batteries in **PART**.
 
-[PART Multiburst Rough Rough Guide](PART_Multiburst.md) - [PDF](PART_Multiburst.pdf) - 
+[PART Multiburst Very Rough Guide](PART_Multiburst.md) ([PDF](PART_Multiburst.pdf)) - 
 A temporary placeholder document, taken from email correspondence, describing the behavior of the parameters in the Multiburst stimulus.
 
 ## PART Builds

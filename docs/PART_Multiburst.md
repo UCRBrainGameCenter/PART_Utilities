@@ -1,4 +1,4 @@
-# PART Multiburst
+# PART Multiburst Very Rough Guide
 
 This is a rough overview of the current state of the Multiburst stimuli in PART.
 

@@ -12,6 +12,7 @@ _The application for research subjects_
 [MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/BGCScience_2.4.2_MacOS.dmg)  
 [Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/BGCScience_2.4.2_Android.apk)  
 
+To create a user for the NOISE test battery in BGCScience, press "Register" and enter the study code **noise1test**.  Afterward, when prompted, provide any username.
 
 ## PART Builds
 
@@ -24,3 +25,9 @@ _The application for researchers_
 [Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/PART_2.4.2_WINx64.zip)  
 [MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/PART_2.4.2_MacOS.dmg)  
 [Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/PART_2.4.2_Android.apk)  
+
+
+To download the NOISE test battery in PART, go to the _Modules_ tab, press the _Download_ button next to "Study Batteries", and enter the name **Noise - Full Battery**.
+
+The code to unlock the device is "3141", which you will need to do in order to edit edit any of the batteries.
+

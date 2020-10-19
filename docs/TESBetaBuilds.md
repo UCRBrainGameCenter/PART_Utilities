@@ -21,7 +21,7 @@ _The application for researchers_
 **Current Beta Version**: 2.4.2  
 **Updated**: 10/16/20
 
-[TestFlight Link (iOS) [Awaiting Apple Approval]](127.0.0.1)  
+[TestFlight Link (iOS)](https://testflight.apple.com/join/jRzHw3Cw)  
 [Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/PART_2.4.2_WINx64.zip)  
 [MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/PART_2.4.2_MacOS.dmg)  
 [Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.2/PART_2.4.2_Android.apk)  

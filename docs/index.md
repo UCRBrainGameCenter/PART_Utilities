@@ -51,7 +51,9 @@ A temporary placeholder document, taken from email correspondence, describing th
 
 [Development and validation of Portable Automated Rapid Testing (PART) measures for auditory research](Papers/Gallun_et_al_2018_POMA_Development_of_PART.pdf)
 
-[Portable Automated Rapid Testing (PART) for auditory research: Validation in a normal hearing population](https://www.biorxiv.org/content/10.1101/2020.01.08.899088v1)
+[Portable Automated Rapid Testing (PART) for auditory research: Validation in a normal hearing population](https://asa.scitation.org/doi/full/10.1121/10.0002108)
+
+[Comparing spatial release from masking using traditional methods and Portable Automated Rapid Testing (PART) iPad App](Papers/Srinivasan_et_al_2020_SRM_iPad_vs_Booth.pdf)
 
 ## Presentations
 

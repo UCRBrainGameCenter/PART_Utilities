@@ -21,29 +21,29 @@ A temporary placeholder document, taken from email correspondence, describing th
 
 ## PART Builds
 
-**Current Version**: 2.4.1  
-**Updated**: 09/15/20
+**Current Version**: 2.4.7
+**Updated**: 04/05/21
 
 [Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)  
 [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.part)  
 [Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9N5C67G35FT4)  
-[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.1/PART_2.4.1_WINx64.zip)  
-[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.1/PART_2.4.1_MacOS.dmg)  
-[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.1/PART_2.4.1_Android.apk)
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_WINx64.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_Android.apk)
 
 [PART Build Archive](PARTBuildArchive.md)
 
 ## BGC Science Builds
 
-**Current Version**: 2.4.1  
-**Updated**: 09/15/20
+**Current Version**: 2.4.7
+**Updated**: 04/05/21
 
 [Apple App Store (iOS)](https://apps.apple.com/us/app/bgc-science/id1508696910?platform=ipad)  
 [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.bgcscience)  
 [Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9MZZ0KKG7W93)  
-[Windows Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.1/BGCScience_2.4.1_WINx64.zip)  
-[MacOS Build](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.1/BGCScience_2.4.1_MacOS.dmg)  
-[Android APK](https://braingamecentergamefiles.s3-us-west-1.amazonaws.com/PART/Builds/v2.4.1/BGCScience_2.4.1_Android.apk)
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.1/BGCScience_2.4.7_WINx64.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.1/BGCScience_2.4.7_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.1/BGCScience_2.4.7_Android.apk)
 
 [BGC Science Build Archive](BGCScienceBuildArchive.md)
 

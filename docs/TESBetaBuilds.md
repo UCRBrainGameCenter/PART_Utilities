@@ -4,15 +4,14 @@
 
 _The application for research subjects_
 
-**Current Beta Version**: 2.4.7 (Same as Release version)
+**Current Beta Version**: 2.4.8  
+**Updated**: 04/26/21
 
-**Updated**: 04/05/21
+*For iOS and Android, you can download the current version off of the respective appstore.*
 
-*For iOS and Android, you can download the app straight from the App Store and Play Store respectively*
-
-[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/BGCScience_2.4.7_WINx64.zip)  
-[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/BGCScience_2.4.7_MacOS.dmg)  
-[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/BGCScience_2.4.7_Android.apk)  
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/BGCScience_2.4.8_WINx64.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/BGCScience_2.4.8_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/BGCScience_2.4.8_Android.apk)  
 
 To create a user for the NOISE test battery in BGCScience, press "Register" and enter a study code from below. Afterward, when prompted, provide any username.
 
@@ -24,15 +23,15 @@ To create a user for the NOISE test battery in BGCScience, press "Register" and 
 
 _The application for researchers_
 
-**Current Beta Version**: 2.4.7 (Same as Release version)
+**Current Beta Version**: 2.4.8  
+**Updated**: 04/26/21
 
-**Updated**: 04/05/21
+*For iOS and Android, you can download the current version off of the respective appstore.*
 
-*For iOS and Android, you can download the app straight from the App Store and Play Store respectively*
-
-[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_WINx64.zip)  
-[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_MacOS.dmg)  
-[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_Android.apk)  
+[TestFlight Link (iOS)](https://testflight.apple.com/join/jRzHw3Cw)  
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/PART_2.4.8_WINx64.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/PART_2.4.8_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/PART_2.4.8_Android.apk)  
 
 
 To download the NOISE test battery in PART, go to the _Modules_ tab, press the _Download_ button next to "Study Batteries", and enter the name **Noise - Full Battery v4**.

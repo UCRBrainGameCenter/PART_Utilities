@@ -55,6 +55,10 @@ A temporary placeholder document, taken from email correspondence, describing th
 
 [Comparing spatial release from masking using traditional methods and Portable Automated Rapid Testing (PART) iPad App](Papers/Srinivasan_et_al_2020_SRM_iPad_vs_Booth.pdf)
 
+[Portable Automated Rapid Testing (PART) of auditory processing abilities in young normally- hearing listeners: A remotely administered replication with participant-owned devices](https://psyarxiv.com/9u68p/)
+
+[Portable Automated Rapid Testing (PART) for auditory assessment: Validation in a young adult normal-hearing population](https://asa.scitation.org/doi/10.1121/10.0002108)
+
 ## Presentations
 
 [Describing, diagnosing, and treating auditory processing abilities and disabilities in adults](Presentations/Gallun_ASHA_2018_Short_Course.pdf)

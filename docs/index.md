@@ -4,7 +4,7 @@ Welcome to our application for Portable Automated Rapid Testing (**PART**), a pr
 
 PART was designed to allow users to perform high-quality assessments of auditory processing abilities in a wide variety of settings. We believe that the nervous system processes sound in many complex ways and that hearing health is best described in terms of how well a listener is able to make use of the multiple dimensions on which sounds can vary.
 
-This application includes a wide variety of auditory tasks, all of which have been shown to have utility in assessing auditory function in the laboratory. The set of tasks were chosen by the PART development team, which is led by Frederick J. Gallun at the National Center for Rehabilitative Auditory Research, David Eddins at the University of South Florida, and Aaron Seitz at the University of California Riverside (UCR). The program is a production of the UCR Brain Game Center, a research unit focused on brain fitness methods and applications.
+This application includes a wide variety of auditory tasks, all of which have been shown to have utility in assessing auditory function in the laboratory. The set of tasks were chosen by the PART development team, which is led by Frederick J. Gallun at the Oregon Health & Science University, David Eddins at the University of South Florida, and Aaron Seitz at the University of California Riverside (UCR). The program is a production of the UCR Brain Game Center, a research unit focused on brain fitness methods and applications.
 
 We'd also like to introduce **BGC Science**, an automated, subject-oriented version of **PART**, designed to simplify remote testing, opening the door for complete subject-driven testing.  Any test designed in **PART** will work in **BGC Science**.
 

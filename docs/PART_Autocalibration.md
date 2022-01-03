@@ -7,7 +7,7 @@
 
 ## One-time Tablet Setup
 
-1. Download [the latest autocalibration build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/Test/PART_PodAutocalibration27.zip) and extract it on the PC you wish to use. _(Updated Aug 9th, 2021)_
+1. Download [the latest autocalibration build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/Test/PART_AutoCalibration28.zip) and extract it on the PC you wish to use. _(Updated Jan 3rd, 2021)_
 2. Press the small buttopn on the back of the pod that enters it in Bluetooth pairing mode.
 3. Add the Pod as a Bluetooth Device for the PC.
     1. Right click the Bluetooth Icon in the task bar and choose `Add a Bluetooth Device` to open the settings window.

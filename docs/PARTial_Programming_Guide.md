@@ -1,8 +1,8 @@
 # PARTial Programming Guide
 
-*Date: December 3, 2018*
+*Date: August 19, 2022*
 
-These instructions refer to the App Store version of PART (1.3.2; 18.5.5)
+These instructions refer to the App Store version of PART (2.6.0)
 
 **Welcome to the Portable Automated Rapid Test (PART) platform for psychoacoustical testing!**
 

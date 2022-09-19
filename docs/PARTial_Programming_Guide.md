@@ -228,6 +228,10 @@ Gallun, F.J., Diedesch, A.C., Kampel, S.D., and Jakien, K.M. "Independent impact
 
 Gallun, F.J., Durlach, N.I., Colburn, H.S., Shinn-Cunningham, B.G., Best, V., Mason, C.R., and Kidd, G. Jr. "The extent to which a position-based explanation accounts for binaural release from informational masking." *The Journal of the Acoustical Society of America* 124, no. 1 (2008): 439-449.
 
+### Informational Masking
+
+Sebastian Lelo de Larrea-Mancera, E., Stavropoulos, T., Hoover, E.C., Eddins, D.A., Gallun, F.J., and Seitz, A.R., "Portable Automated Rapid Testing (PART) for auditory assessment: Validation in a young adult normal-hearing population." *The Journal of the Acoustical Society of America* 148, (2020): 1831-1851
+
 ## Acknowledgments
 
 This work was supported by NIH/NIDCD R01 0015051. The application represents the individual work of the authors and creators and should in no way be considered to be approved by or represent official policy of the United States Government.

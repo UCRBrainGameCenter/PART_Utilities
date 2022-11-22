@@ -34,14 +34,15 @@
 
 ## 2.5.1
 
-*Released: December 22th, 2021*
+*Released: December 22nd, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.1/PART_2.5.1_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.1/PART_2.5.1_MacOS.dmg)  
 [Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.1/PART_2.5.1_Android.apk)  
-.0
 
-*Released: February 11th, 2022*
+## 2.5.0
+
+*Released: November 16th, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.0/PART_2.5.0_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.0/PART_2.5.0_MacOS.dmg)  
@@ -49,7 +50,7 @@
 
 ## 2.4.9
 
-*Released: November 16th, 2021*
+*Released: June 16th, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/PART_2.4.9_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/PART_2.4.9_MacOS.dmg)  
@@ -65,7 +66,7 @@
 
 ## 2.4.7
 
-*Released: April 1st, 2021*
+*Released: April 5th, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/PART_2.4.7_MacOS.dmg)  

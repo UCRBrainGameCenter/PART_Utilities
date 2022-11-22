@@ -34,7 +34,7 @@
 
 ## 2.5.1
 
-*Released: December 22th, 2021*
+*Released: December 22nd, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.1/BGCScience_2.5.1_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.1/BGCScience_2.5.1_MacOS.dmg)  
@@ -42,7 +42,7 @@
 
 ## 2.5.0
 
-*Released: February 11th, 2022*
+*Released: November 16th, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.0/BGCScience_2.5.0_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.5.0/BGCScience_2.5.0_MacOS.dmg)  
@@ -50,7 +50,7 @@
 
 ## 2.4.9
 
-*Released: November 16th, 2021*
+*Released: June 16th, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.9/BGCScience_2.4.9_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.9/BGCScience_2.4.9_MacOS.dmg)  
@@ -58,7 +58,7 @@
 
 ## 2.4.8
 
-*Released: June 16th, 2021*
+*Released: April 26th, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/BGCScience_2.4.8_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.8/BGCScience_2.4.8_MacOS.dmg)  
@@ -66,7 +66,7 @@
 
 ## 2.4.7
 
-*Released: April 1st, 2021*
+*Released: April 5th, 2021*
 
 [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/BGCScience_2.4.7_WINx64.zip)  
 [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.4.7/BGCScience_2.4.7_MacOS.dmg)  

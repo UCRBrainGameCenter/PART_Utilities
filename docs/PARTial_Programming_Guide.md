@@ -1,8 +1,8 @@
 # PARTial Programming Guide
 
-*Date: December 3, 2018*
+*Date: August 19, 2022*
 
-These instructions refer to the App Store version of PART (1.3.2; 18.5.5)
+These instructions refer to the App Store version of PART (2.6.0)
 
 **Welcome to the Portable Automated Rapid Test (PART) platform for psychoacoustical testing!**
 
@@ -36,17 +36,18 @@ PART is continually being upgraded and at this time includes assessment tools th
 * *Spatial Release from Speech on Speech Masking*
 * *Informational Masking* — Multiple Burst Paradigm
 
-At this time, only a single default Battery is included (‘Listen Battery v2’), which presents limited instructions and examples and includes three of the assessments described above: Binaural Frequency Modulation Detection, Temporal Envelope Gap Discrimination, and Spectrotemporal Modulation Detection. For references related to the assessments provided, see the references in **Section Six**.
+At this time, only a single default Battery is included, which presents limited instructions and examples and includes three of the assessments described above: Binaural Frequency Modulation Detection, Temporal Envelope Gap Discrimination, and Spectrotemporal Modulation Detection. For references related to the assessments provided, see the references in **Section Six**.
 
-A recent modification to reduce the download time is that the CRM sentences and TEN maskers have been removed from the app and are now available as optional downloads. Unless you know you won’t need them, downloading them is recommended to avoid errors with batteries that need them. The best practice is, immediately after installing PART, to go to the Modules screen and download all optional modules. A screenshot of where the Modules tab can be found on the Settings screen is shown below. To get to the settings screen, tap the Settings button on the main screen, shown in **Figure 1a**.
-
-![Figure 1a. PART Start Screen](Images/PART_StartScreen.png)  
+A recent modification to reduce the download time is that Study Batteries, Server Code Batteries, CRM English Talkers, CRM Spanish Talkers, TENoise, Dichotic Sentences English, Dichotic Sentences Spanish, Sequence Digits English, Sequence Digits Spanish, ACT Audio and Images, AVDAT English Audio, AVDAT Spanish Audio, Letter Number Audio, and ER40 Images are now available as optional downloads. To access them, immediately after installing PART, to go to the Modules screen and download all optional modules. A screenshot of where the Modules tab can be found on the Settings screen is shown below. To get to the settings screen, tap the Settings button on the main screen, shown in **Figure 1a**.
+  
+![PART start screen](https://user-images.githubusercontent.com/112570735/191066286-c610da23-c048-4fc8-b852-16cc9ac891fb.PNG)
 *Figure 1a. PART Start Screen*
 
-![Figure 1b. Settings Menu screen](Images/PART_UserSelect.png)  
+![PART user select](https://user-images.githubusercontent.com/112570735/191066520-42e81231-6c82-455d-bacd-6a4df8ac06ab.PNG)
 *Figure 1b. Settings Menu screen*
 
-![Figure 1c. Modules Tab](Images/PART_Modules.png)  
+![PART modules 1 of 2 - 2 6 0](https://user-images.githubusercontent.com/112570735/191064104-11b55cc2-587e-469e-a4ec-0c72988d28ea.jpeg)
+![PART modules 2 of 2 - 2 6 0](https://user-images.githubusercontent.com/112570735/191064133-f8a0635f-e192-4822-a3b5-ba90e9f2753f.jpeg)
 *Figure 1c. Modules Tab*
 
 ## Section Two: Calibration Procedures
@@ -226,6 +227,10 @@ Gallun, F.J., Diedesch, A.C., Kampel, S.D., and Jakien, K.M. "Independent impact
 ### Multiple Burst Informational Masking
 
 Gallun, F.J., Durlach, N.I., Colburn, H.S., Shinn-Cunningham, B.G., Best, V., Mason, C.R., and Kidd, G. Jr. "The extent to which a position-based explanation accounts for binaural release from informational masking." *The Journal of the Acoustical Society of America* 124, no. 1 (2008): 439-449.
+
+### Informational Masking
+
+Sebastian Lelo de Larrea-Mancera, E., Stavropoulos, T., Hoover, E.C., Eddins, D.A., Gallun, F.J., and Seitz, A.R., "Portable Automated Rapid Testing (PART) for auditory assessment: Validation in a young adult normal-hearing population." *The Journal of the Acoustical Society of America* 148, (2020): 1831-1851
 
 ## Acknowledgments
 

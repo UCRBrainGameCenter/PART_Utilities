@@ -9,9 +9,9 @@ _The application for research subjects_
 
 *For iOS and Android, you can download the current version off of the respective appstore.*
 
-[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_Windows.zip)  
-[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_MacOS.dmg)  
-[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_Android.apk)  
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.5/BGCScience_2.6.5_23.05.18_Windows.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.5/BGCScience_2.6.5_23.05.18_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.5/BGCScience_2.6.5_23.05.18_Android.apk)  
 
 To create a user for the NOISE test battery in BGCScience, press "Register" and enter a study code from below. Afterward, when prompted, provide any username.
 

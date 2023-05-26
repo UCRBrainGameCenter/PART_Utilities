@@ -21,29 +21,29 @@ A temporary placeholder document, taken from email correspondence, describing th
 
 ## PART Builds
 
-**Current Version**: 2.6.3
-**Updated**: 03/03/23
+**Current Version**: 2.6.5
+**Updated**: 05/26/23
 
 [Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)  
 [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.part)  
 [Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9N5C67G35FT4)  
-[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/PART_2.6.3_23.03.02_WINx64.zip)  
-[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/PART_2.6.3_23.03.02_MacOS.dmg)  
-[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/PART_2.6.3_23.02.28_Android.apk)  
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.5/PART_2.6.5_23.05.18_Windows.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.5/PART_2.6.5_23.05.18_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.5/PART_2.6.5_23.05.18_Android.apk)  
 
 [PART Build Archive](PARTBuildArchive.md)
 
 ## BGC Science Builds
 
-**Current Version**: 2.6.3
-**Updated**: 03/03/23
+**Current Version**: 2.6.5
+**Updated**: 05/26/23
 
 [Apple App Store (iOS)](https://apps.apple.com/us/app/bgc-science/id1508696910?platform=ipad)  
 [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.bgcscience)  
 [Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9MZZ0KKG7W93)  
-[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.3_23.03.02_WINx64.zip)  
-[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.3_23.03.02_MacOS.dmg)  
-[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.3_23.02.28_Android.apk)  
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_Windows.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_Android.apk)  
 
 [BGC Science Build Archive](BGCScienceBuildArchive.md)
 

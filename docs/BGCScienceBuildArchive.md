@@ -1,6 +1,14 @@
 # BGC Science Build Archive
 
-## 2.6.3 (Current Version)
+## 2.6.5 (Current Version)
+
+*Released: May 26th, 2023*
+
+[Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_Windows.zip)  
+[MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_MacOS.dmg)  
+[Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.3/BGCScience_2.6.5_23.05.18_Android.apk)  
+
+## 2.6.3
 
 *Released: March 3rd, 2023*
 

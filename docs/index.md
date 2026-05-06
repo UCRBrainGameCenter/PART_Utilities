@@ -61,18 +61,18 @@ Next releases are generally not recommended for active participant studies witho
 
 ## PART
 
-**Current Version:** 2.6.7  
-**Updated:** 11/17/2023
+**Current Version:** 2.7.2  
+**Updated:** 12/13/2025
 
 ### Mobile
 - [Apple App Store (iOS)](https://itunes.apple.com/us/app/p-a-r-t/id1126512332?platform=ipad)
 - [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.part)
-- [Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.7/PART_2_6_7_Android.apk)
+- [Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/BGCSuite/2.7.2/882.3/81aa7ea29d401de2eec101817bd66ea0ddc93591/PARTRelease/Android/PART_2.7.2_25.12.17.1531_Android.apk)
 
 ### Desktop
 - [Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9N5C67G35FT4)
-- [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.7/PART_2_6_7_1037.zip)
-- [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.7/PART.dmg)
+- [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/BGCSuite/2.7.2/878.1/10a4e741a9a142c6c845f9bcf2d13e246d4311d1/PARTRelease/StandaloneWindows64/PART_2.7.2_25.12.13.0300_Windows.zip)
+- [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/BGCSuite/2.7.2/878.1/10a4e741a9a142c6c845f9bcf2d13e246d4311d1/PARTRelease/StandaloneOSX/PART_2.7.2_25.12.12.1944_MacOS.pkg)
 
 [PART Build Archive](PARTBuildArchive.md)
 
@@ -80,18 +80,18 @@ Next releases are generally not recommended for active participant studies witho
 
 ## BGC Science
 
-**Current Version:** 2.6.7  
-**Updated:** 11/17/2023
+**Current Version:** 2.7.2  
+**Updated:** 12/13/2025
 
 ### Mobile
 - [Apple App Store (iOS)](https://apps.apple.com/us/app/bgc-science/id1508696910?platform=ipad)
 - [Google Play Store (Android)](https://play.google.com/store/apps/details?id=com.ucr.bgcscience)
-- [Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.7/BGCScience_2_6_7_Android.apk)
+- [Android APK](https://bgcgamefiles.s3.us-east-2.amazonaws.com/BGCSuite/2.7.2/882.2/81aa7ea29d401de2eec101817bd66ea0ddc93591/BGCScienceRelease/Android/BGCScience_2.7.2_25.12.17.1513_Android.apk)
 
 ### Desktop
 - [Microsoft Store (Windows)](https://www.microsoft.com/store/productId/9MZZ0KKG7W93)
-- [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.7/BGCScience_2_6_7_Windows.zip)
-- [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/PART/Builds/v2.6.7/BGCScience.dmg)
+- [Windows Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/BGCSuite/2.7.2/878.1/10a4e741a9a142c6c845f9bcf2d13e246d4311d1/BGCScienceRelease/StandaloneWindows64/BGCScience_2.7.2_25.12.13.0113_Windows.zip)
+- [MacOS Build](https://bgcgamefiles.s3.us-east-2.amazonaws.com/BGCSuite/2.7.2/878.1/10a4e741a9a142c6c845f9bcf2d13e246d4311d1/BGCScienceRelease/StandaloneOSX/BGCScience_2.7.2_25.12.12.1859_MacOS.pkg)
 
 [BGC Science Build Archive](BGCScienceBuildArchive.md)
 

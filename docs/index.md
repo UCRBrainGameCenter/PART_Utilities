@@ -101,33 +101,37 @@ Next releases are generally not recommended for active participant studies witho
 
 ## PART Next
 
-**Current Version:** 2.7.7  
-**Updated:** 04/29/2026
+**Current Version:** 2.7.8  
+**Updated:** 07/08/2026
 
 ### Mobile
 - [Apple App Store (iOS)](https://apps.apple.com/us/app/p-a-r-t-next/id6743176555)
 - [Google Play Store (Android)](https://play.google.com/store/apps/details?id=edu.northeastern.part.next)
-- [Android APK](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.7/1003.1/aba486b6de8908d404e37e4573e01edc3b9d6fcb/PARTNextRelease/Android/PARTNext_2.7.7_26.04.29.1613_Android.apk)
+- [Android APK](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.8/1084.1/fbc9fabec6099d721eb9acc56d300aa34af96a46/PARTNextRelease/Android/PARTNext_2.7.8_26.06.17.1956_Android.apk)
 
 ### Desktop
-- [Windows Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.7/1003.1/aba486b6de8908d404e37e4573e01edc3b9d6fcb/PARTNextRelease/StandaloneWindows64/PARTNext_2.7.7_26.04.29.2141_Windows.zip)
-- [MacOS Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.7/1003.1/aba486b6de8908d404e37e4573e01edc3b9d6fcb/PARTNextRelease/StandaloneOSX/PARTNext_2.7.7_26.04.29.1607_MacOS.pkg)
+- [Windows Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.8/1084.1/fbc9fabec6099d721eb9acc56d300aa34af96a46/PARTNextRelease/StandaloneWindows64/PARTNext_2.7.8_26.06.18.0640_Windows.zip)
+- [MacOS Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.8/1084.1/fbc9fabec6099d721eb9acc56d300aa34af96a46/PARTNextRelease/StandaloneOSX/PARTNext_2.7.8_26.06.17.1856_MacOS.pkg)
+
+[PART Next Build Archive](PARTNextBuildArchive.md)
 
 ---
 
 ## BGC Next
 
-**Current Version:** 2.7.7  
-**Updated:** 04/29/2026
+**Current Version:** 2.7.8  
+**Updated:** 07/08/2026
 
 ### Mobile
 - [Apple App Store (iOS)](https://apps.apple.com/us/app/bgc-next/id6743176334)
 - [Google Play Store (Android)](https://play.google.com/store/apps/details?id=edu.northeastern.bgc.next)
-- [Android APK](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.7/1003.1/aba486b6de8908d404e37e4573e01edc3b9d6fcb/BGCScienceNextRelease/Android/BGCScienceNext_2.7.7_26.04.29.1527_Android.apk)
+- [Android APK](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.8/1084.1/fbc9fabec6099d721eb9acc56d300aa34af96a46/BGCScienceNextRelease/Android/BGCScienceNext_2.7.8_26.07.08.1139_Android.apk)
 
 ### Desktop
-- [Windows Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.7/1003.1/aba486b6de8908d404e37e4573e01edc3b9d6fcb/BGCScienceNextRelease/StandaloneWindows64/BGCScienceNext_2.7.7_26.04.29.1932_Windows.zip)
-- [MacOS Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.7/1003.1/aba486b6de8908d404e37e4573e01edc3b9d6fcb/BGCScienceNextRelease/StandaloneOSX/BGCScienceNext_2.7.7_26.04.29.1631_MacOS.pkg)
+- [Windows Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.8/1084.1/fbc9fabec6099d721eb9acc56d300aa34af96a46/BGCScienceNextRelease/StandaloneWindows64/BGCScienceNext_2.7.8_26.06.18.0248_Windows.zip)
+- [MacOS Build](https://bgcgamefiles.s3.amazonaws.com/BGCSuite/2.7.8/1084.1/fbc9fabec6099d721eb9acc56d300aa34af96a46/BGCScienceNextRelease/StandaloneOSX/BGCScienceNext_2.7.8_26.06.17.1844_MacOS.pkg)
+
+[BGC Science Next Build Archive](BGCScienceNextBuildArchive.md)
 
 ---
 
